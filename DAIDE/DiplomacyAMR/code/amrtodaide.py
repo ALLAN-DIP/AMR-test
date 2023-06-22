@@ -6,6 +6,8 @@ Written by Ulf Hermjakob, USC/ISI
 
 import argparse
 from collections import defaultdict
+import sys
+sys.path.insert(0, '../AMR/DAIDE/DiplomacyAMR/code')
 from daide import Daide
 import json
 import os
