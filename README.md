@@ -3,6 +3,7 @@
 
 
 Script to map single ENG sentence to DAIDE:
+
 Download the pre-trained model file from:
 
 https://drive.google.com/file/d/1Snne-h_vaO8WcCVGqk4PZRuGacSDyMif/view?usp=drive_link
