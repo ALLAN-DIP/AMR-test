@@ -31,7 +31,7 @@ def ENG_AMR(english,sender,recipient):
 
 def eng_to_daide(english,sender,recipient,inference):
     print('---------------------------')
-    gen_graphs = inference.parse_sents(['SEN'+' send to '+'REC'+' that '+english], disable_progress=False)
+    gen_graphs = inference.parse_sents(['SEN'+' send to '+'REC'+' that '+english.replace(sender,'SEN').replace(recipient,'REC')], disable_progress=False)
     for graph in gen_graphs:
         graph = graph.replace('SEN',sender).replace('REC',recipient)
         amr = AMR()

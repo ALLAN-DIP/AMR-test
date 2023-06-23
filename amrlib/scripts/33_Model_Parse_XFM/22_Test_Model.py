@@ -11,10 +11,10 @@ if __name__ == '__main__':
     os.environ['TOKENIZERS_PARALLELISM'] = 'false'
     setup_logging(logfname='logs/test_model_parse_xfm.log', level=WARN)
     silence_penman()
-    device     = 'cuda:0'
+    device     = 'cpu'
     corpus_dir = 'amrlib/data/tdata_xfm/'
     ref_in_fn  = 'test.txt.nowiki'     # 1898 amr entries
-    model_dir  = 'amrlib/data/model_parse_xfm/checkpoint-9920/'
+    model_dir  = '../personal/SEN_REC_MODEL/'
     gold_fpath = os.path.join(model_dir, 'test-gold.txt')
     pred_fpath = os.path.join(model_dir, 'test-pred.txt')
     num_beams   = 4     # use 4 for formal testing (batch_size=16 for 24GB GPU)
