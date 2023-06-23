@@ -4,7 +4,7 @@
 
 Script to map single ENG sentence to DAIDE:
 Download the pre-trained model file from:
-and put the model in 
+and put the model in personal/SEN_REC_MODEL/
 
 <details>
 <summary>CLI examples</summary>
@@ -13,11 +13,5 @@ python single.py --english "I propose ally between us" --sender "Russia" --recip
 ``` 
 </details>
 
-<details>
-<summary>jsonl output format</summary>
+You can also use a sentence-AMR file to parse from AMR to DAIDE, more detailed information please refer to README.me file in DAIDE/DiplomacyAMR
 
-jsonl output example line:
-```
-{"id": "dip_0001.1", "snt": "Austria", "amr": "(c / country :name (n / name :op1 \"Austria\"))", "daide-status": "Full-DAIDE", "daide": "AUS"}
-```
-</details>
