@@ -20,12 +20,11 @@ python single.py --english "I propose ally between us" --sender "Russia" --recip
 For several sentences, use the following code to parse from English to AMR. Make sure put the file with same syntax under ../AMR/amrlib/amrlib/data/diplomacy/data/test
 
 <details>
-<summary>CLI examples</summary>
-```
-cd ../AMR/amrlib/scripts/33_Model_Parse_XFM\
+<summary>CLI examples_2</summary>
   
+```
+cd ../AMR/amrlib/scripts/33_Model_Parse_XFM
 python 10_Collect_AMR_Data.py
-
 python 22_Test_Model.py
 ``` 
 </details>
