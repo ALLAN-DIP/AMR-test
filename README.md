@@ -18,15 +18,5 @@ python single.py --english "I propose ally between us" --sender "Russia" --recip
 ``` 
 </details>
 
-For several sentences, use the following code to parse from English to AMR. Make sure put the file with same syntax under ../AMR/amrlib/amrlib/data/diplomacy/data/test
-
-<details>
-<summary>CLI examples_2</summary>
-  
-```
-cd ../AMR/amrlib/scripts/33_Model_Parse_XFM
-python 10_Collect_AMR_Data.py
-python 22_Test_Model.py
-``` 
-</details>
+If you have a test file containing several AMRs, please refer to DAIDE/Diplomacy/README.md to parse it from AMR to DAIDE.
 
