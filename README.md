@@ -23,7 +23,9 @@ For several sentences, use the following code to parse from English to AMR. Make
 <summary>CLI examples</summary>
 ```
 cd ../AMR/amrlib/scripts/33_Model_Parse_XFM\
+  
 python 10_Collect_AMR_Data.py
+
 python 22_Test_Model.py
 ``` 
 </details>
