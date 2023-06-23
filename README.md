@@ -30,5 +30,7 @@ python 22_Test_Model.py
 ``` 
 </details>
 
+
+
 You can also use a sentence-AMR file to parse from AMR to DAIDE, more detailed information please refer to README.me file in DAIDE/DiplomacyAMR
 
