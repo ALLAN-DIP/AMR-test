@@ -11,7 +11,7 @@ if __name__ == '__main__':
     os.environ['TOKENIZERS_PARALLELISM'] = 'false'
     setup_logging(logfname='logs/test_model_parse_xfm.log', level=WARN)
     silence_penman()
-    device     = 'cpu'
+    device     = 'cuda:0'
     corpus_dir = 'amrlib/data/tdata_xfm/'
     ref_in_fn  = 'test.txt.nowiki'     # 1898 amr entries
     model_dir  = '../personal/SEN_REC_MODEL/'
