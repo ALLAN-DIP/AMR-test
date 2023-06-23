@@ -31,3 +31,12 @@ python 22_Test_Model.py
 </details>
 
 
+<details>
+<summary>CLI examples</summary>
+
+```
+cd DiplomacyAMR/annotations
+../code/amrtodaide.py -i dip-all-amr-smosher.txt --max 10
+../code/amrtodaide.py -i dip-all-amr-smosher.txt -o dip-all-amr-daide-smosher.txt -j dip-all-amr-daide-smosher.jsonl
+``` 
+</details>
