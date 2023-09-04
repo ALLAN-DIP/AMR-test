@@ -6,8 +6,6 @@ Written by Ulf Hermjakob, USC/ISI
 
 import argparse
 from collections import defaultdict
-import sys
-sys.path.insert(0, '../AMR/DAIDE/DiplomacyAMR/code')
 from daide import Daide
 import json
 import os
@@ -416,6 +414,19 @@ class AMR:
         else:
             return arrangements[0][1:-1]
 
+    def optional_AND_PRP(self,arrangements):
+        """Wraps a list of arrangements in an `AND`.
+        If the list has a single element, return that element instead.
+        :param arrangements: List of arrangements.
+        :return: Arrangement object.
+        """
+        result_list = [s.replace("(PRP ", "")[0:-1] for s in arrangements]
+        arrangements = sorted(set(result_list), key=str)
+        if len(arrangements) > 1:
+            return f"PRP (AND {' '.join(arrangements)})"
+        else:
+            return arrangements[0][1:-1]
+
     #def amr_to_daide(self, amr_node: AMRnode = None, top: bool = True) -> Tuple[str, list[str]]:
     def amr_to_daide(self, amr_node: AMRnode = None, top: bool = True):
         # returns pair of (daide_element, warnings)
@@ -445,7 +456,9 @@ class AMR:
                     daide_elements.append(daide_element)
                     i += 1
             #if self.parent_is_in_concepts(amr_node, ['ally-01', 'demilitarize-01','attack-01','have-03']):
-            if self.parent_is_in_concepts(amr_node, ['ally-01', 'demilitarize-01','have-03','attack-01','move-01']):
+            if amr_node.parents == []:
+                return self.optional_AND_PRP(sorted(daide_elements)),warnings
+            elif self.parent_is_in_concepts(amr_node, ['ally-01', 'demilitarize-01','have-03','attack-01','move-01']):
                 return ' '.join(sorted(daide_elements)), warnings
             else:
                 result = self.optional_AND(sorted(daide_elements))
@@ -453,7 +466,7 @@ class AMR:
 
         
         d = self.match_for_daide(amr_node,
-                                     '($utype(army|fleet) :mod $power(country) :location $location(sea|province))')
+                                     '($utype(army|fleet|unit) :mod $power(country) :location $location(sea|province))')
         # if d := self.match_for_daide(amr_node,
         #                              '($utype(army|fleet) :mod $power(country) :location $location(sea|province))'):
         if d:
@@ -469,8 +482,15 @@ class AMR:
             unit = d.get('unit', '')
             if top:
                 self.add_warning_to_match_dict(d, 'MTO at top level')
-            if re.match(r'^\([A-Z]{3} (?:AMY|FLT) ', unit):
-                return self.match_map(amr_node, d, 'XDO ($unit MTO $destination)')
+            if re.match(r'^\([A-Z]{3} (?:AMY|FLT|UNT) ', unit):
+                if self.ancestor_is_in_concepts(amr_node, ['possible-01','propose-01','agree-01','expect-01']):
+                    return self.match_map(amr_node, d, 'XDO ($unit MTO $destination)')
+                else:
+                    s = self.match_map(amr_node, d, 'XDO ($unit MTO $destination)')
+                    s_list = list(s)
+                    s_list[0] = 'PRP (' + s_list[0] + ')'
+                    s_modified = tuple(s_list)
+                    return s_modified
             else:
                 match = re.findall(r'\b[A-Z]{3}\b', unit)
                 if match:
@@ -562,9 +582,7 @@ class AMR:
 
         d = self.match_for_daide(amr_node, '(ally-01 :ARG1 $allies :ARG3 $ennemies)')
         if d :
-            print(d)
             ennemies = d.get('ennemies', '')
-            print(ennemies)
             ennemies_list = ennemies.split()
             if top:
                 self.add_warning_to_match_dict(d, 'ALY at top level')
@@ -620,7 +638,20 @@ class AMR:
         if d :
             if top:
                 self.add_warning_to_match_dict(d, 'BLD at top level')
-            return self.match_map(amr_node, d, '($power $utype $location) BLD')
+            
+            if self.ancestor_is_in_concepts(amr_node, ['possible-01','propose-01','agree-01','expect-01']):
+                return self.match_map(amr_node, d, '($power $utype $location) BLD')
+            
+            
+            else:
+                s = self.match_map(amr_node, d, '($power $utype $location) BLD')
+                s_list = list(s)
+                s_list[0] = 'PRP ( XDO (' + s_list[0] + '))'
+                s_modified = tuple(s_list)
+                return s_modified
+
+
+
         d = self.match_for_daide(amr_node, '(agree-01 :ARG1 $proposal(build-01|hold-03|remove-01'
                                                '|retreat-01|support-01|transport-01))')
         if d :
@@ -644,12 +675,31 @@ class AMR:
                     self.add_warning_to_match_dict(d, f"DMZ locations must be provinces, not {location_id}")
             if top:
                 self.add_warning_to_match_dict(d, 'DMZ at top level')
-            return self.match_map(amr_node, d, 'DMZ ($powers) ($locations)')
+            if self.ancestor_is_in_concepts(amr_node, ['possible-01','propose-01','agree-01','expect-01']):
+                return self.match_map(amr_node, d, 'DMZ ($powers) ($locations)')
+            else:
+                s = self.match_map(amr_node, d, 'DMZ ($powers) ($locations)')
+                s_list = list(s)
+                s_list[0] = 'PRP (' + s_list[0] + ')'
+                s_modified = tuple(s_list)
+                return s_modified
         d = self.match_for_daide(amr_node, '(remove-01 :ARG1 $unit(army|fleet))')
         if d :
             if top:
                 self.add_warning_to_match_dict(d, 'REM at top level')
-            return self.match_map(amr_node, d, '$unit REM')
+            if self.ancestor_is_in_concepts(amr_node, ['possible-01','propose-01','agree-01','expect-01']):
+                return self.match_map(amr_node, d, '$unit REM')
+            else:
+                s = self.match_map(amr_node, d, '$unit REM')
+                s_list = list(s)
+                s_list[0] = 'PRP ( XDO (' + s_list[0] + '))'
+                s_modified = tuple(s_list)
+                return s_modified
+
+
+
+
+
         d = self.match_for_daide(amr_node, '(transport-01 :ARG1 $army(army) :ARG3 $destination(province) '
                                                ':ARG4 $path(sea))')
         if d :
@@ -674,7 +724,11 @@ class AMR:
             if self.ancestor_is_in_concepts(amr_node, ['propose-01', 'agree-01','possible-01','expect-01']):
                 return self.match_map(amr_node, d, 'SCD ($owner $province)')
             else:
-                return self.match_map(amr_node, d, 'PRP (SCD ($owner $province))')
+                s = self.match_map(amr_node, d, 'SCD ($owner $province)')
+                s_list = list(s)
+                s_list[0] = 'PRP (' + s_list[0] + ')'
+                s_modified = tuple(s_list)
+                return s_modified
 
         # d = self.match_for_daide(amr_node, '(have-03 :ARG0 $owner(country) :ARG1 $province)')
         # if d :
@@ -705,20 +759,20 @@ class AMR:
         d = self.match_for_daide(amr_node, '(expect-01 :ARG1 $proposal(build-01|hold-03|remove-01'
                                                '|retreat-01|transport-01))')
         if d :
-            return self.match_map(amr_node, d, 'THK (XDO ($proposal))')
+            return self.match_map(amr_node, d, 'PRP (XDO ($proposal))')
 
         d = self.match_for_daide(amr_node, '(expect-01 :ARG1 $thoughts)')
         if d :
-            return self.match_map(amr_node, d, 'THK $thoughts')
+            return self.match_map(amr_node, d, 'PRP $thoughts')
 
         d = self.match_for_daide(amr_node, '(possible-01 :ARG1 $proposal(build-01|hold-03|remove-01'
                                                '|retreat-01|transport-01))')
         if d :
-            return self.match_map(amr_node, d, 'THK (XDO ($proposal))')
+            return self.match_map(amr_node, d, 'PRP (XDO ($proposal))')
 
         d = self.match_for_daide(amr_node, '(possible-01 :ARG1 $thoughts)')
         if d :
-            return self.match_map(amr_node, d, 'THK $thoughts')
+            return self.match_map(amr_node, d, 'PRP $thoughts')
         
         # d = self.match_for_daide(amr_node, '(attack-01 :ARG0 $unit :ARG1 $province)')
         # if d:
@@ -933,4 +987,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

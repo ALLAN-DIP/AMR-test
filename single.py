@@ -1,7 +1,9 @@
 import argparse
+import sys
 from amrlib.models.parse_xfm.inference import Inference
 from daide2eng.utils import gen_English, is_daide,create_daide_grammar
-from DAIDE.DiplomacyAMR.code.amrtodaide import AMR
+sys.path.insert(0, '../AMR/DAIDE/DiplomacyAMR/code')
+from amrtodaide import AMR
 import regex
 def main():
     AMRparser = argparse.ArgumentParser()
