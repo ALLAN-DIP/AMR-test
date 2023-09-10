@@ -40,3 +40,6 @@ python 20_Train_Model.py
 python 22_Test_Model.py
 ``` 
 </details>
+
+Current Loaded Modules on CARC:
+1) gcc/11.3.0   2) openblas/0.3.21   3) openmpi/4.1.4   4) pmix/3.2.3   5) usc/11.3.0 
