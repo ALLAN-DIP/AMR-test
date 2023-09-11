@@ -6,9 +6,9 @@ Script to map single ENG sentence to DAIDE:
 
 Download the pre-trained model file from:
 
-https://drive.google.com/file/d/1Snne-h_vaO8WcCVGqk4PZRuGacSDyMif/view?usp=drive_link
+https://drive.google.com/drive/folders/1meajUcpn9zbozHsKj82uSpLXp6KAJi_0?usp=drive_link
 
-and put the model under personal/SEN_REC_MODEL/
+and put the model that you want to use under personal/ while modifying the model name in single.py line 25.
 
 <details>
 <summary>CLI examples</summary>
@@ -43,3 +43,5 @@ python 22_Test_Model.py
 
 Current Loaded Modules on CARC:
 1) gcc/11.3.0   2) openblas/0.3.21   3) openmpi/4.1.4   4) pmix/3.2.3   5) usc/11.3.0 
+
+For using AMR model to test on 300-ish gold DAIDE dataset, please refer to code here:https://github.com/ALLAN-DIP/diplomacy_cicero/blob/experiments/fairdiplomacy/AMR/test.py
