@@ -3,7 +3,7 @@ import sys
 from amrlib.models.parse_xfm.inference import Inference
 from daide2eng.utils import gen_English, is_daide,create_daide_grammar
 sys.path.insert(0, '../AMR/DAIDE/DiplomacyAMR/code')
-from amrtodaide import AMR
+from amrtodaide_LLM import AMR
 import regex
 def main():
     AMRparser = argparse.ArgumentParser()
@@ -14,7 +14,8 @@ def main():
 
     sentence = AMRparser.parse_args()
     if sentence.english:
-      daide_status,daide_s = ENG_AMR(sentence.english,sentence.sender,sentence.recipient)
+      graph, daide_status,daide_s = ENG_AMR(sentence.english,sentence.sender,sentence.recipient)
+    print(graph)
     print(daide_status)
     print(daide_s)
 
@@ -25,10 +26,10 @@ def ENG_AMR(english,sender,recipient):
     model_dir  = 'personal/SEN_REC_MODEL/'
     inference = Inference(model_dir, batch_size=batch_size, num_beams=num_beams, device=device)
     try:
-      daide_status,daide_s = eng_to_daide(english,sender,recipient,inference)
+      graph, daide_status,daide_s = eng_to_daide(english,sender,recipient,inference)
     except:
-      daide_status,daide_s = 'NO-DAIDE',''
-    return daide_status,daide_s
+      graph, daide_status,daide_s = 'no-amr','NO-DAIDE',''
+    return graph, daide_status,daide_s
 
 
 def eng_to_daide(english,sender,recipient,inference):
@@ -49,7 +50,7 @@ def eng_to_daide(english,sender,recipient,inference):
         else:
             daide_s, warnings = amr.amr_to_daide()
         daide_status = check_valid(daide_s)
-        return daide_status,daide_s
+        return graph,daide_status,daide_s
 
 def check_valid(daide_sentence):
     grammar = create_daide_grammar(level=130)
