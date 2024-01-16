@@ -6,9 +6,9 @@ Script to map single ENG sentence to DAIDE:
 
 Download the pre-trained model file from:
 
-https://drive.google.com/drive/folders/1meajUcpn9zbozHsKj82uSpLXp6KAJi_0?usp=drive_link
+https://drive.google.com/drive/folders/1buUmjbY3rRZDDNEBSTVh8wObZp38Gvy8?usp=sharing
 
-and put the model that you want to use under personal/ while modifying the model name in single.py line 25.
+and put the model under personal/SEN_REC_MODEL/ .
 
 <details>
 <summary>CLI examples</summary>
