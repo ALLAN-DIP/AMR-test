@@ -335,7 +335,6 @@ class AMR:
     def match_for_daide(self, amr_node: AMRnode, target_s: str, in_dict: Optional[dict] = None) -> Optional[dict]:
         warnings = []
         m2 = re.match(r'\((\S+)\s+(.*)\)$', target_s)
-        print(m2)
         #if m2 := re.match(r'\((\S+)\s+(.*)\)$', target_s):
         if m2:
             result = in_dict or {'match': True}
@@ -410,7 +409,6 @@ class AMR:
         :return: Arrangement object.
         """
         arrangements = sorted(set(arrangements), key=str)
-        print(arrangements)
         if len(arrangements) > 1:
             return f"AND {' '.join(arrangements)}"
         elif len(arrangements) == 0:
@@ -426,7 +424,6 @@ class AMR:
         """
         result_list = [s.replace("(PRP ", "")[0:-1] for s in arrangements]
         arrangements = sorted(set(result_list), key=str)
-        print(arrangements)
         if len(arrangements) > 1:
             return f"PRP (AND {' '.join(arrangements)})"
         elif len(arrangements) == 0:
