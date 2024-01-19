@@ -11,10 +11,20 @@ https://drive.google.com/drive/folders/1buUmjbY3rRZDDNEBSTVh8wObZp38Gvy8?usp=sha
 and put the model under personal/SEN_REC_MODEL/ .
 
 <details>
-<summary>CLI examples</summary>
+<summary>CLI examples for single message</summary>
 
 ```
 python single.py --english "I propose ally between us" --sender "Russia" --recipient "Turkey"
+``` 
+</details>
+
+
+
+<details>
+<summary>CLI examples for multi messages</summary>
+
+```
+python multi-message.py --document msg_daide_state_AIGame_18.json
 ``` 
 </details>
 
