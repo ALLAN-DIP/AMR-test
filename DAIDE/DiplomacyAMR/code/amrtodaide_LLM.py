@@ -328,7 +328,8 @@ class AMR:
                         break
                     name_elements.append(op)
                     i += 1
-                return ' '.join(name_elements)
+                s = ' '.join(name_elements)
+                return s
 
         return ''
 
@@ -368,10 +369,22 @@ class AMR:
                                    or re.match(r'\$([a-z][a-z0-9]*)$', value))
                         if (m2c and ((m2c.lastindex == 1) or (sub_concept in m2c.group(2).split('|')))):
                             var = m2c.group(1)
+                            # print(sub_amr_node.concept)
+                            # if self.parent_is_in_concepts(sub_amr_node,['support-01']):
+                            #     print('yes1')
                             sub_name = self.ne_amr_to_name(sub_amr_node)
+                            print(amr_node.concept)
+                            print(sub_amr_node.concept)
+                            print(sub_name)
+                            #print(sub_name)
                             # if sub_name := self.ne_amr_to_name(sub_amr_node):
                             if sub_name:
+                                #print('1')
                                 result[var] = daide.name_to_id.get(sub_name) or sub_name
+                                #print('2')
+                                if sub_amr_node.concept == 'country' and amr_node.concept =='support-01':
+                                    print('yes2')
+                                    result[var] = '(' + result[var] +' <unit_type> <location>)'
                             elif sub_amr_node.subs:
                                 result[var], sub_warnings = self.amr_to_daide(sub_amr_node, top=False) or sub_concept
                                 warnings = self.extend_new_warnings(warnings, sub_warnings)
@@ -434,6 +447,7 @@ class AMR:
     #def amr_to_daide(self, amr_node: AMRnode = None, top: bool = True) -> Tuple[str, list[str]]:
     def amr_to_daide(self, amr_node: AMRnode = None, top: bool = True):
         # returns pair of (daide_element, warnings)
+        print('----')
         warnings = []
         if amr_node is None:
             amr_node = self.root
@@ -467,7 +481,6 @@ class AMR:
             else:
                 result = self.optional_AND(sorted(daide_elements))
                 return result, warnings
-
         d = self.match_for_daide(amr_node,
                                      '($utype(army|fleet) :mod $power(country) :location $location(sea|province))')
         if d:
@@ -511,7 +524,6 @@ class AMR:
         #     m =self.match_for_daide(amr_node,
         #                               '($utype(army|fleet) :mod $power(country)')
         #     return self.match_map(amr_node, m, '$power $utype')
-
         d = self.match_for_daide(amr_node, '(move-01 :ARG1 $unit :ARG2 $destination)')
         if d:
             unit = d.get('unit', '')
@@ -569,8 +581,19 @@ class AMR:
                 self.add_warning_to_match_dict(d, 'SUP at top level')
             if supportee.startswith('SCD'):
                 return self.match_map(amr_node, d, '$supportee')
+            elif supportee.startswith('XDO'):
+                supportee = supportee.replace('XDO (','')[:-1]
+                s = self.match_map(amr_node, d, '$supporter SUP $supportee')
+                s_list = list(s)
+                s_list[0] = s_list[0].replace('XDO (','')[:-1]
+                s_modified = tuple(s_list)
+                return s_modified
             else:
-                return self.match_map(amr_node, d, 'XDO ($supporter SUP $supportee)')
+                s = self.match_map(amr_node, d, 'XDO ($supporter SUP $supportee)')
+                s_list = list(s)
+                s_list[0] = 'PRP (' + s_list[0].replace('province','<location>') + ')'
+                s_modified = tuple(s_list)
+                return s_modified
 
 
 
@@ -663,7 +686,7 @@ class AMR:
         if d :
             return self.match_map(amr_node, d, 'SUB $submission')
         d = self.match_for_daide(amr_node, '(propose-01 :ARG1 $proposal(build-01|hold-03|remove-01'
-                                               '|retreat-01|transport-01))')
+                                               '|retreat-01|transport-01|support-01))')
         if d :
             return self.match_map(amr_node, d, 'PRP (XDO ($proposal))')
         d = self.match_for_daide(amr_node, '(propose-01 :ARG1 $proposal)')
