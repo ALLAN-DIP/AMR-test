@@ -15,6 +15,8 @@ if __name__ == "__main__":
     overall_F2_noremove = 0
     for messages in data:
         count +=1
+        msg = messages['msg']
+        print(msg)
         daide = messages['gold_daide']
         daide_s = messages['translated_daide']
         daide_status = messages['daide_status']
@@ -38,6 +40,7 @@ if __name__ == "__main__":
     average_F2 = overall_F2/normal_count
     average_F_noremove = overall_F_noremove/count
     average_F2_noremove = overall_F2_noremove/count
+    print('=======================')
     print(f'all messages is {count}')
     print(f'no daide messages is {count2}')
     print(f'daide messages is {normal_count}')
