@@ -191,6 +191,10 @@ def main():
     amr = AMR()
     amr_s = '(f / fear-01\n      :ARG0 (c / country :name (n / name :op1 \"Germany\"))\n      :ARG1 (m / move-01\n            :ARG1 (u / unit\n                  :mod (c2 / country :name (n2 / name :op1 \"Italy\")))\n            :ARG2 (p / province :name (n3 / name :op1 \"Tyrolia\"))))'
     amr_tuple = amr.string_to_amr(amr_s)
+    amr_tuple[0].concept = 'fear-02'
+    amr_s2 = amr.amr_to_string()
+    print(amr_s2)
+    print(amr_tuple[0])
     dfs_recursive(amr_tuple[0])
 
 def dfs_recursive(node):
