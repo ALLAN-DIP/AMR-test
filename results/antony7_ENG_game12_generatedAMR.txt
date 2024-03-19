@@ -1,0 +1,5327 @@
+# ::id real_12.1
+# ::snt England send to France that Hi France! I know a lot of people like to go at each other, but I'd like to be different. I'm down to go after Germany if you'd like!
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a2 / attack-01
+            :ARG0 c
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany")))
+      :ARG2 c2)
+
+# ::id real_12.2
+# ::snt England send to Germany that Hi Germany! Any chance we could work together? I could help you take Russia on if you'd like.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Russia")))
+      :ARG3 c2)
+
+# ::id real_12.3
+# ::snt Russia send to Germany that Hey Germany! I hope we can have peace on our border - I'd love to work with you in Scandinavia and elsewhere.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany"))))
+      :ARG3 c2)
+
+# ::id real_12.4
+# ::snt Italy send to France that Hey France! How are you doing? Just reaching out to ask if you'd want to DMZ Pie/gol/wms/naf for now.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (d / demilitarize-01
+            :ARG1 (a / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "France")))
+            :ARG2 (s / sea
+                  :name (n3 / name
+                        :op1 "Gulf"
+                        :op2 "of"
+                        :op3 "Lyon")))
+      :ARG3 c2)
+
+# ::id real_12.5
+# ::snt England send to Russia that Hi Russia! Shall we be civil up north? I'd love to be able to work with you on taking down Germany.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany")))
+      :ARG3 c2)
+
+# ::id real_12.6
+# ::snt Russia send to Italy that Hey Italy!
+
+I hope we can work together - I/R is my favorite alliance. We have lots of common targets, and once the target is dealt with we can peacefully turn and head north.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy"))))
+
+# ::id real_12.7
+# ::snt Italy send to Germany that Hey Germany! How's it going? Just reaching out to ask if you'd want to DMZ Tyr for now.
+(p / possible-01
+      :ARG1 (d / demilitarize-01
+            :ARG1 (a / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Germany"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :ARG2 (s / sea
+                  :name (n3 / name
+                        :op1 "Tyrolia"))))
+
+# ::id real_12.8
+# ::snt England send to Turkey that Hi Turkey!
+
+You drew the south, so you've got the hardest start. I'm glad to help you out if you'd like.
+(a / amr-empty)
+
+# ::id real_12.9
+# ::snt Russia send to Austria that Hey Austria! I hope we can work together - A/R is my favorite alliance. We have lots of common targets, and once the target is dealt with we can peacefully turn and head north.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria"))))
+
+# ::id real_12.10
+# ::snt England send to Austria that Hi Austria! I hope things go well for us! Let me know what I can do to help.
+(a / amr-empty)
+
+# ::id real_12.11
+# ::snt Italy send to Russia that Hey Russia! How's it going? Totally agree, IR is a great alliance.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a2 / ally-01
+            :ARG1 (a3 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))))
+      :ARG2 c2)
+
+# ::id real_12.12
+# ::snt England send to Italy that Hi Italy! I hope things go well for us! Let me know what I can do to help.
+(a / amr-empty)
+
+# ::id real_12.13
+# ::snt Italy send to Russia that Also agree - seems like we might be a little late to start the press for this phase, but what're you thinking for opening moves? I haven't had anything from either A or T yet.
+(a / amr-empty)
+
+# ::id real_12.14
+# ::snt Russia send to France that Hey France!
+
+I hope we can work together - F/R is my favorite alliance. We have lots of common targets, and once the target is dealt with we can peacefully turn and head north.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))))
+
+# ::id real_12.15
+# ::snt England send to Turkey that How're you feeling about Russia? Any thoughts?
+(a / amr-empty)
+
+# ::id real_12.16
+# ::snt Italy send to Austria that Hey Austria! How's it going? What're you thinking for opening moves? Any interest in an A/I against Turkey?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Austria"))
+                  :op3 (c3 / country
+                        :name (n3 / name
+                              :op1 "Austria")))
+            :ARG3 (c4 / country
+                  :name (n4 / name
+                        :op1 "Turkey")))
+      :ARG3 c2)
+
+# ::id real_12.17
+# ::snt Russia send to Italy that Nothing from A/T to me yet either. I'd like to open south and cooperate with you against them if that works for you.
+(a / and
+      :op1 (t / tell-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy")))
+      :op2 (a2 / ally-01
+            :ARG1 (a3 / and
+                  :op1 c
+                  :op2 c2)
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Austria"))))
+
+# ::id real_12.18
+# ::snt England send to France that I propose DMZ in the channel so we can focus our fleets on taking down Germany
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (d / demilitarize-01
+            :ARG1 (a / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "France")))
+            :ARG2 (s / sea
+                  :name (n3 / name
+                        :op1 "English"
+                        :op2 "Channel"))
+            :purpose (a2 / attack-01
+                  :ARG0 a
+                  :op1 c
+                  :op2 c2)
+            :ARG1 (c3 / country
+                  :name (n4 / name
+                        :op1 "Germany")))
+      :ARG3 c2)
+
+# ::id real_12.19
+# ::snt Russia send to England that Hey England! I'd love to work with you in Scandinavia.
+(a / amr-empty)
+
+# ::id real_12.20
+# ::snt England send to Germany that Would love your thoughts on whether we go for Russia or France! I'm open to either.
+(p / possible-01
+      :ARG1 (a / attack-01
+            :ARG0 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany")))
+            :ARG1 (o / or
+                  :op1 (c3 / country
+                        :name (n3 / name
+                              :op1 "Russia"))
+                  :op2 (c4 / country
+                        :name (n4 / name
+                              :op1 "France")))))
+
+# ::id real_12.21
+# ::snt Italy send to England that Hey England! How's it going? Same to you. How're things looking for you - have you had any press from G or F yet?
+(a / amr-empty)
+
+# ::id real_12.22
+# ::snt England send to Russia that Sounds great! I'll take Norway for sure with a fleet. I'd love it if you could focus on your south :)
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "Norway")))
+      :ARG2 (c2 / country
+            :name (n3 / name
+                  :op1 "Russia")))
+
+# ::id real_12.23
+# ::snt England send to Italy that Nothing yet, unfortunately!
+(a / amr-empty)
+
+# ::id real_12.24
+# ::snt England send to Italy that I prefer to be friends with France usually, but if they don't respond, I might switch things up
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))))
+
+# ::id real_12.25
+# ::snt Russia send to Turkey that Hey Turkey! I hope we can work together - a juggernaut can be a great alliance. What do you say we bounce in Black Sea and work together from there?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (a2 / ally-01
+                  :ARG1 (a3 / and
+                        :op1 c
+                        :op2 (c2 / country
+                              :name (n2 / name
+                                    :op1 "Turkey"))))
+            :op2 a2
+            :ARG1 (a4 / and
+                  :op1 c
+                  :op2 c2))
+      :ARG3 c2)
+
+# ::id real_12.26
+# ::snt England send to Russia that Any word from Germany or France?
+(a / amr-empty)
+
+# ::id real_12.27
+# ::snt Italy send to Russia that Works for me. Shall we see what Austria wants to do first? Will be fairly easy to change our moves if we feel like we can't work with him.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "Russia")))
+
+# ::id real_12.28
+# ::snt Russia send to England that That's the plan! No worries from me if you take Norway with a fleet.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Norway"))
+            :condition (f / fleet)))
+
+# ::id real_12.29
+# ::snt England send to Austria that How're you feeling about your neighbors? Russia's being friendly in chat, but they may not be so friendly in their moves.
+(a / amr-empty)
+
+# ::id real_12.30
+# ::snt Italy send to England that Yeah, same here. Let's see how he responds. My favorite alliance as England is definitely with Italy so let's stay in touch.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "England"))))
+
+# ::id real_12.31
+# ::snt Russia send to England that Not yet, you?
+(a / amr-empty)
+
+# ::id real_12.32
+# ::snt England send to Russia that Sounds great!
+(a / amr-empty)
+
+# ::id real_12.33
+# ::snt Italy send to Turkey that Hey Turkey! Just wanted to reach out - I assume you're going for a standard opening but what're you thinking in terms of your plans going forward?
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod c)
+            :ARG2 (p / province
+                  :name (n2 / name
+                        :op1 "Ankara"))))
+
+# ::id real_12.34
+# ::snt Russia send to Italy that Agreed! Always good to stay flexible. Heard anything from Germany or France yet?
+(a / amr-empty)
+
+# ::id real_12.35
+# ::snt England send to Italy that Sounds great! Same.
+(a / amr-empty)
+
+# ::id real_12.36
+# ::snt Italy send to France that Hey France! Just want to confirm we can DMZ those four territories?
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (d / demilitarize-01
+            :ARG1 (a / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "France")))
+            :ARG2 (s / sea
+                  :name (n3 / name
+                        :op1 "North"
+                        :op2 "Sea")))
+      :polarity (a2 / amr-unknown))
+
+# ::id real_12.37
+# ::snt Russia send to England that Let's stay in touch and compare notes as things develop.
+(a / amr-empty)
+
+# ::id real_12.38
+# ::snt Italy send to Russia that Nope, nothing yet. England seems to think he wants to ally with France but I don't think France has responded.
+(a / and
+      :op1 (e / expect-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (a2 / ally-01
+                  :ARG1 a
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "France"))))
+      :op2 (t / tell-01
+            :polarity -
+            :ARG0 (c3 / country
+                  :name (n3 / name
+                        :op1 "Italy"))
+            :ARG1 (p / possible-01
+                  :ARG1 (a3 / ally-01
+                        :ARG1 c3
+                        :ARG2 (c4 / country
+                              :name (n4 / name
+                                    :op1 "Russia"))))))
+
+# ::id real_12.39
+# ::snt Russia send to Germany that Hello?
+(a / amr-empty)
+
+# ::id real_12.40
+# ::snt England send to Russia that I haven't heard from either
+(a / amr-empty)
+
+# ::id real_12.41
+# ::snt Italy send to England that Awesome. Any preference on who I work with in the east?
+(a / amr-empty)
+
+# ::id real_12.42
+# ::snt Russia send to Italy that Same
+(a / amr-empty)
+
+# ::id real_12.43
+# ::snt England send to Russia that How're you opening?
+(a / amr-empty)
+
+# ::id real_12.44
+# ::snt Italy send to Russia that How are you thinking we open? I haven't had anything from Austria so am leaning towards a Lepanto.
+(p / possible-01
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Italy")))
+            :ARG2 (p2 / province
+                  :name (n2 / name
+                        :op1 "Apulia"))))
+
+# ::id real_12.45
+# ::snt Russia send to England that This is a really quiet game...
+(a / amr-empty)
+
+# ::id real_12.46
+# ::snt England send to Italy that Turkey IMO, but it's up to you!
+(a / amr-empty)
+
+# ::id real_12.47
+# ::snt Russia send to England that South. Haven't decided between Ukr and Gal.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :location (p / province
+                        :name (n2 / name
+                              :op1 "Ukraine")))
+            :ARG2 (p2 / province
+                  :name (n3 / name
+                        :op1 "Galicia")))
+      :ARG2 (c2 / country
+            :name (n4 / name
+                  :op1 "England")))
+
+# ::id real_12.48
+# ::snt Italy send to England that Works for me!
+(a / amr-empty)
+
+# ::id real_12.49
+# ::snt Russia send to Italy that Agreed, let's do it. We'll see if A/T are actually playing.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a2 / attack-01
+            :ARG0 c
+            :ARG1 (s / sea
+                  :name (n2 / name
+                        :op1 "Aegean"
+                        :op2 "Sea")))
+      :ARG2 (c2 / country
+            :name (n3 / name
+                  :op1 "Italy")))
+
+# ::id real_12.50
+# ::snt Russia send to Italy that I'm moving to Ukr and Gal, and taking a shot at Black Sea.
+(a / and
+      :op1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Russia")))
+            :ARG2 (p / province
+                  :name (n2 / name
+                        :op1 "Ukraine")))
+      :op2 (m2 / move-01
+            :ARG1 (f / fleet
+                  :mod c)
+            :ARG2 (s / sea
+                  :name (n3 / name
+                        :op1 "Black"
+                        :op2 "Sea"))))
+
+# ::id real_12.51
+# ::snt Russia send to Italy that So...no press from either of them? Disappointing.
+(a / amr-empty)
+
+# ::id real_12.52
+# ::snt England send to Italy that Did you hear anything from France?
+(a / amr-empty)
+
+# ::id real_12.53
+# ::snt Russia send to Austria that You there, Austria? We've got to start talking if we're going to cooperate...
+(a / amr-empty)
+
+# ::id real_12.54
+# ::snt Italy send to Russia that Yep. At least Turkey isn't talking to either of us. Seems like we can pick our ally?
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia")))))
+
+# ::id real_12.55
+# ::snt England send to Germany that How're you thinking about Belgium? I'd love to be able to take it with an army and help you out on the ground.
+(a / amr-empty)
+
+# ::id real_12.56
+# ::snt Italy send to England that Nope, still nothing.
+(a / amr-empty)
+
+# ::id real_12.57
+# ::snt England send to France that Glad to see we're on the same page!
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "France")))
+
+# ::id real_12.58
+# ::snt Russia send to Germany that Germany? You there? Can we work together?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany"))))
+      :ARG3 c2
+      :polarity (a3 / amr-unknown))
+
+# ::id real_12.59
+# ::snt England send to France that Any chance I could have Belgium?
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Belgium"))))
+
+# ::id real_12.60
+# ::snt Italy send to Germany that Hey Germany - have you heard anything from France?
+(a / amr-empty)
+
+# ::id real_12.61
+# ::snt Russia send to Italy that Agreed. I'm not committed to either yet, but leaning towards you. You're the only one who's actually communicated though.
+(a / and
+      :op1 (a2 / agree-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (a3 / ally-01
+                  :ARG1 c
+                  :ARG2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :ARG2 c2)
+      :op2 (p / possible-01
+            :ARG1 (a4 / ally-01
+                  :polarity -
+                  :ARG1 c
+                  :ARG2 (c3 / country
+                        :name (n3 / name
+                              :op1 "France")))))
+
+# ::id real_12.62
+# ::snt Italy send to Austria that Hey Austria - glad to see you're here! How're you feeling about Russia and Turkey?
+(a / amr-empty)
+
+# ::id real_12.63
+# ::snt England send to Italy that Same
+(a / amr-empty)
+
+# ::id real_12.64
+# ::snt Russia send to Austria that I'm happy to leave Galicia open if it means you'll actually start communicating.
+(p / possible-01
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Austria"))
+                  :location (p2 / province
+                        :name (n2 / name
+                              :op1 "Galicia")))))
+
+# ::id real_12.65
+# ::snt England send to Italy that Yeah, if they don't start talking here soon, I'm all for going after them.
+(p / possible-01
+      :ARG1 (a / attack-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria"))
+            :condition (t / tell-01
+                  :polarity -
+                  :ARG0 c
+                  :ARG1 (c3 / country
+                        :name (n3 / name
+                              :op1 "France"))
+                  :ARG2 c2)))
+
+# ::id real_12.66
+# ::snt Russia send to Turkey that You there, Turkey? We've got to start communicating if we're going to cooperate...
+(a / amr-empty)
+
+# ::id real_12.67
+# ::snt England send to Russia that France still hasn't responded. I'm convoying to Belgium and taking Norway with Norwegian.
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (h / have-03
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Belgium"))))
+      :op2 (t / transport-01
+            :ARG0 (f / fleet
+                  :mod c)
+            :ARG1 (a2 / army
+                  :mod c)
+            :ARG3 (p3 / province
+                  :name (n3 / name
+                        :op1 "Norway")))
+      :op3 h
+      :ARG0 c
+      :ARG1 (p4 / province
+            :name (n4 / name
+                  :op1 "Norway")))
+
+# ::id real_12.68
+# ::snt England send to Germany that France still hasn't responded to me. I'm convoying to Belgium with York
+(t / transport-01
+      :ARG0 (f / fleet
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG1 (a / army
+            :mod c)
+      :ARG3 (p / province
+            :name (n2 / name
+                  :op1 "Belgium")))
+
+# ::id real_12.69
+# ::snt Italy send to Turkey that Hey Turkey - glad to see you're here! Can I get a response? Would be a shame for us to not talk
+(a / amr-empty)
+
+# ::id real_12.70
+# ::snt Russia send to France that Hey France, you there?
+(a / amr-empty)
+
+# ::id real_12.71
+# ::snt England send to Russia that Any word on whether or not Germany's letting you into Sweden?
+(h / have-03
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Sweden"))
+      :polarity (a / amr-unknown))
+
+# ::id real_12.72
+# ::snt England send to Austria that You've got a great start, I'd say!
+(a / amr-empty)
+
+# ::id real_12.73
+# ::snt Italy send to Russia that Yeah, same. Will probably do a standard Lepanto for now but let's stay in touch.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (m / move-01
+            :ARG1 (a / army
+                  :mod c
+                  :location (p / province
+                        :name (n2 / name
+                              :op1 "Naples")))
+            :ARG2 (p2 / province
+                  :name (n3 / name
+                        :op1 "Rome"))))
+
+# ::id real_12.74
+# ::snt England send to Austria that The Lepanto's probably your best bet for taking down Turkey
+(a / amr-empty)
+
+# ::id real_12.75
+# ::snt England send to Turkey that The Lepanto's probably coming for you
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / attack-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Turkey"))
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Austria"))))
+
+# ::id real_12.76
+# ::snt Italy send to England that I'm definitely on board for that.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.77
+# ::snt Russia send to England that I appreciate the heads up. If you do convoy, I hope it's somewhere other than Norway.
+
+I'm also a bit miffed at how quiet this game is.
+(a / amr-empty)
+
+# ::id real_12.78
+# ::snt England send to Turkey that I'd suggest you try to be friends with Russia
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey"))
+                  :op2 c))
+      :ARG3 (c3 / country
+            :name (n3 / name
+                  :op1 "Russia")))
+
+# ::id real_12.79
+# ::snt Italy send to France that Hey France! Checking in.
+(a / amr-empty)
+
+# ::id real_12.80
+# ::snt England send to Italy that I'll see you in France :)
+(a / amr-empty)
+
+# ::id real_12.81
+# ::snt Russia send to England that He hasn't communicated with me at all. I'd dearly love to get into Sweden, but he can bounce me if he wants.
+(a / and
+      :op1 (t / tell-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Germany"))
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia")))
+      :op2 (p / possible-01
+            :ARG1 (b / bounce-03
+                  :ARG1 (u / unit
+                        :mod c)
+                  :ARG2 (u2 / unit
+                        :mod c2)
+                  :ARG3 (p2 / province
+                        :name (n3 / name
+                              :op1 "Sweden")))))
+
+# ::id real_12.82
+# ::snt England send to Russia that Norwegian is going to Norway, no worries!
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (m / move-01
+            :ARG1 (f / fleet
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "Norwegian"
+                              :op2 "Sea")))
+            :ARG2 (p / province
+                  :name (n3 / name
+                        :op1 "Norway"))))
+
+# ::id real_12.83
+# ::snt Russia send to Italy that Agreed. Nothing from Germany, France, or Turkey. England claims he's getting Belgium, btw.
+(a / and
+      :op1 (a2 / agree-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (h / have-03
+                  :ARG0 c
+                  :ARG1 (p / province
+                        :name (n2 / name
+                              :op1 "Belgium")))
+            :ARG2 (c2 / country
+                  :name (n3 / name
+                        :op1 "Italy")))
+      :op2 (t / tell-01
+            :ARG0 (c3 / country
+                  :name (n4 / name
+                        :op1 "England"))
+            :ARG1 (h2 / have-03
+                  :ARG0 c2
+                  :ARG1 p)
+            :ARG2 (o / or
+                  :op1 c2
+                  :op2 (c4 / country
+                        :name (n5 / name
+                              :op1 "France"))
+                  :op3 (c5 / country
+                        :name (n6 / name
+                              :op1 "Turkey")))))
+
+# ::id real_12.84
+# ::snt England send to Russia that Yeah, you should be able to get into Sweden though.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Sweden"))))
+
+# ::id real_12.85
+# ::snt Russia send to England that Thanks!
+(a / amr-empty)
+
+# ::id real_12.86
+# ::snt Italy send to England that Hope so!
+(a / amr-empty)
+
+# ::id real_12.87
+# ::snt England send to Italy that You gonna move to Pied?
+(m / move-01
+      :ARG1 (u / unit
+            :mod (c / country
+                  :name (n / name
+                        :op1 "Italy")))
+      :ARG2 (p / province
+            :name (n2 / name
+                  :op1 "Piedmont"))
+      :polarity (a / amr-unknown))
+
+# ::id real_12.88
+# ::snt England send to Italy that Those fleets are rightfully rightfully terrifying
+(f / fear-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (f2 / fleet
+            :mod (c2 / country
+                  :name (n2 / name))))
+
+# ::id real_12.89
+# ::snt Russia send to England that Want to just DMZ the north? You've got all kinds of centers to go after in the west, and I've got my hands full in the south.
+(p / possible-01
+      :ARG1 (d / demilitarize-01
+            :ARG1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG2 (s / sea
+                  :name n
+                  :op1 "North"
+                  :op2 "Sea")))
+
+# ::id real_12.90
+# ::snt England send to Germany that Supporting Denmark into Sweden. Do you want support into Bur?
+(a / and
+      :op1 (s / support-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :location (p / province
+                              :name (n2 / name
+                                    :op1 "Denmark")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Sweden"))))
+      :op2 (p3 / propose-01
+            :ARG0 c
+            :ARG1 (s2 / support-01
+                  :ARG0 (c2 / country
+                        :name (n4 / name
+                              :op1 "Germany"))
+                  :ARG1 (m2 / move-01
+                        :ARG1 (u2 / unit)
+                        :ARG2 (p4 / province
+                              :name (n5 / name
+                                    :op1 "Burgundy"))))
+            :ARG3 c2))
+
+# ::id real_12.91
+# ::snt Italy send to Russia that Interesting stuff. How's Austria seeming to you? He isn't talking to me at all.
+(a / amr-empty)
+
+# ::id real_12.92
+# ::snt Russia send to Italy that Austria's finally started communicating. Wanna try to rope him in against Turkey?
+(p / possible-01
+      :ARG1 (p2 / propose-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Austria"))
+            :ARG1 (a / ally-01
+                  :ARG1 (a2 / and
+                        :op1 c
+                        :op2 (c2 / country
+                              :name (n2 / name
+                                    :op1 "Russia")))
+                  :ARG3 (c3 / country
+                        :name (n3 / name
+                              :op1 "Turkey")))
+            :ARG3 c2))
+
+# ::id real_12.93
+# ::snt England send to Germany that I'll be supporting Ruhr into Bur. You should try to take Bur with Ruhr, since France will move to Pic with Par.
+(a / and
+      :op1 (s / support-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :location (p / province
+                              :name (n2 / name
+                                    :op1 "Ruhr")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Burgundy"))))
+      :op2 (p3 / propose-01
+            :ARG0 c
+            :ARG1 a
+            :op1 (h / have-03
+                  :ARG0 (c2 / country
+                        :name (n4 / name
+                              :op1 "Germany"))
+                  :ARG1 p
+                  :instrument (u2 / unit
+                        :mod c2
+                        :location (p4 / province
+                              :name (n5 / name
+                                    :op1 "Ruhr"))))
+            :op2 (m2 / move-01
+                  :ARG1 (u3 / unit
+                        :mod (c3 / country
+                              :name (n6 / name
+                                    :op1 "France")))
+                  :ARG2 (p5 / province
+                        :name (n7 / name
+                              :op1 "Picardy"))))
+      :ARG3 c2)
+
+# ::id real_12.94
+# ::snt Italy send to England that Agreed. Seems like you've made a strong alliance with Germany though so hopefully you're able to handle France.
+(a / and
+      :op1 (a2 / ally-01
+            :ARG1 (a3 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany"))))
+      :op2 (p / possible-01
+            :ARG1 (d / defend-01
+                  :ARG0 c2
+                  :ARG3 (c3 / country
+                        :name (n3 / name
+                              :op1 "France")))))
+
+# ::id real_12.95
+# ::snt Russia send to Italy that The fact that he's building armies instead of fleets reassures me, for what it's worth.
+(f / fear-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (b / build-01
+            :polarity -
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia"))
+            :ARG1 (a / army)))
+
+# ::id real_12.96
+# ::snt England send to Russia that Yeah, I'll support you into Sweden.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod c)
+                  :ARG2 (p2 / province
+                        :name (n2 / name
+                              :op1 "Sweden"))))
+      :ARG3 (c2 / country
+            :name (n3 / name
+                  :op1 "Russia")))
+
+# ::id real_12.97
+# ::snt Italy send to Austria that Hey Austria! Just checking in to see what you're thinking for this phase.
+(a / amr-empty)
+
+# ::id real_12.98
+# ::snt Russia send to Austria that What do you say we work together against Turkey?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Austria")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Turkey")))
+      :ARG3 c2)
+
+# ::id real_12.99
+# ::snt England send to Russia that With Norway, ofc
+(a / amr-empty)
+
+# ::id real_12.100
+# ::snt England send to Italy that Hopefully! Depends on how smart they play.
+(a / amr-empty)
+
+# ::id real_12.101
+# ::snt England send to France that Hey, you wanna talk?
+(a / amr-empty)
+
+# ::id real_12.102
+# ::snt Italy send to France that France, what's up with the southern fleet?
+(a / amr-empty)
+
+# ::id real_12.103
+# ::snt Russia send to Austria that He's not talking, and I'd love to shut him down.
+(a / amr-empty)
+
+# ::id real_12.104
+# ::snt England send to France that Italy's coming for you. I'd suggest sending some of those fleets south.
+(a / and
+      :op1 (e / expect-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (a2 / attack-01
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy"))
+                  :ARG1 c))
+      :op2 (p / propose-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (f / fleet
+                        :mod c)
+                  :direction (s / south))
+            :ARG2 (c3 / country
+                  :name (n3 / name
+                        :op1 "France"))))
+
+# ::id real_12.105
+# ::snt Russia send to England that Appreciate it!
+
+If I get into Sweden, I'll support you to Denmark if you want.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "England")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Denmark"))))
+      :ARG3 c2)
+
+# ::id real_12.106
+# ::snt England send to Austria that How're things going over there?
+(a / amr-empty)
+
+# ::id real_12.107
+# ::snt Italy send to Russia that I haven't had anything from Austria since before the first move. If we do decide to work with him for now I think I'd want to get more than just Smyrna out of the deal. What do you think?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Italy"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia")))))
+
+# ::id real_12.108
+# ::snt England send to Turkey that That army in Ank should let you take down Russia with Austria's help
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (s / support-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria"))
+            :ARG1 (a / attack-01
+                  :ARG0 (a2 / and
+                        :op1 c
+                        :op2 c2)
+                  :ARG1 (c3 / country
+                        :name (n3 / name
+                              :op1 "Russia"))))
+      :ARG3 c2)
+
+# ::id real_12.109
+# ::snt Italy send to England that True.
+(a / amr-empty)
+
+# ::id real_12.110
+# ::snt Russia send to Italy that Agreed. I don't trust him. I'd rather we worked against him. He doesn't communicate.
+(a / and
+      :op1 (t / trust-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia")))
+      :op2 t
+      :polarity -
+      :ARG0 c2
+      :ARG2 c)
+
+# ::id real_12.111
+# ::snt Italy send to Russia that What're you thinking for this move? Might be good to make a move on Austria while he's somewhat vulnerable.
+(p / possible-01
+      :ARG1 (a / attack-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria"))))
+
+# ::id real_12.112
+# ::snt England send to Russia that Aw, you should've taken the support!
+(s / support-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG2 (p / province
+                  :name (n3 / name
+                        :op1 "Paris"))))
+
+# ::id real_12.113
+# ::snt Russia send to England that Ouch. You really want to side with a one-center Germany instead of a four-center Russia?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany")))
+      :ARG3 c2)
+
+# ::id real_12.114
+# ::snt England send to Russia that How about I bounce you in Stp? To prevent Germany from taking it.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (b / bounce-03
+            :ARG1 (u / unit
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia")))
+            :ARG2 (u2 / unit
+                  :mod c)
+            :ARG3 (p2 / province
+                  :name (n3 / name
+                        :op1 "St."
+                        :op2 "Petersburg")))
+      :ARG3 c2)
+
+# ::id real_12.115
+# ::snt Russia send to England that I'd be willing to work with you against him still. You can take Denmark this turn for sure.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Austria"))
+            :time (d / date-entity
+                  :year 1901
+                  :season (f / fall)))
+      :ARG3 c2)
+
+# ::id real_12.116
+# ::snt England send to Russia that You've got Italy and Austria on your side!
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy")))
+      :ARG3 (c3 / country
+            :name (n3 / name
+                  :op1 "Austria")))
+
+# ::id real_12.117
+# ::snt Russia send to Italy that If you're game for it, so am I. I'm thinking of making a play for Vienna or Budapest.
+(p / possible-01
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Russia")))
+            :ARG2 (o / or
+                  :op1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Vienna"))
+                  :op2 (p3 / province
+                        :name (n3 / name
+                              :op1 "Budapest")))))
+
+# ::id real_12.118
+# ::snt England send to Italy that Russia's going to die fast, I think.
+(a / amr-empty)
+
+# ::id real_12.119
+# ::snt England send to Italy that How're things with Austria?
+(a / amr-empty)
+
+# ::id real_12.120
+# ::snt Italy send to England that Yeah, that's what it looks like.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.121
+# ::snt England send to Russia that But I don't want Germany to get too big. They'll take the majority of France.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (h / have-03
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "France"))))
+
+# ::id real_12.122
+# ::snt Italy send to England that Austria isn't talking to me at all. Will probably have to stab him.
+(a / and
+      :op1 (t / tell-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Austria"))
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy")))
+      :op2 (p / possible-01
+            :ARG1 (b / betray-01
+                  :ARG0 c2
+                  :ARG1 c)))
+
+# ::id real_12.123
+# ::snt Russia send to Austria that What happened there? I didn't mean to take Galicia, but I had no choice because you didn't respond to my press.
+(h / have-03
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Galicia")))
+
+# ::id real_12.124
+# ::snt England send to Italy that Yeah, it really does. Turkey won't be around to help you or Austria once Russia falls.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :polarity -
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Turkey"))
+            :ARG2 (o / or
+                  :op1 (c3 / country
+                        :name (n3 / name
+                              :op1 "Italy"))
+                  :op2 (c4 / country
+                        :name (n4 / name
+                              :op1 "Austria")))))
+
+# ::id real_12.125
+# ::snt Italy send to France that France, please send a message. I don't want to have to start moving your way.
+(a / amr-empty)
+
+# ::id real_12.126
+# ::snt Russia send to England that You'll probably get Brest and Iberia. Where's he gonna get his next two centers? I'm a much safer bet.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (h / have-03
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "England"))
+                  :ARG1 a
+                  :op1 (p / province
+                        :name (n3 / name
+                              :op1 "Brest"))
+                  :op2 (p2 / province
+                        :name (n4 / name
+                              :op1 "Iberia"))))
+      :op2 (h2 / have-03
+            :ARG0 c2
+            :ARG1 (s / supply-center
+                  :quant 2)))
+
+# ::id real_12.127
+# ::snt Italy send to England that Agreed.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (t / trust-01
+            :polarity -
+            :ARG0 c
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy")))
+      :ARG2 (c3 / country
+            :name (n3 / name
+                  :op1 "England")))
+
+# ::id real_12.128
+# ::snt England send to Austria that I don't want to see Russia fall too fast. How're things with you and Italy?
+(a / amr-empty)
+
+# ::id real_12.129
+# ::snt Russia send to Turkey that You there, Turkey? Wanna work together?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Turkey"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))))
+      :ARG3 c2)
+
+# ::id real_12.130
+# ::snt Italy send to Austria that Austria, please send me a message. We need to be talking to be able to pull this off.
+(a / amr-empty)
+
+# ::id real_12.131
+# ::snt England send to Russia that It's not that simple.
+(a / amr-empty)
+
+# ::id real_12.132
+# ::snt Italy send to Russia that I'm going to convoy to Albania and tap Trieste. You should try for Budapest.
+(a / and
+      :op1 (t / transport-01
+            :ARG0 (f / fleet
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Italy")))
+            :ARG1 (a2 / army)
+            :ARG3 (p / province
+                  :name (n2 / name
+                        :op1 "Albania")))
+      :op2 (m / move-01
+            :ARG1 (u / unit
+                  :mod c)
+            :ARG2 (p2 / province
+                  :name (n3 / name
+                        :op1 "Trieste")))
+      :op3 (p3 / propose-01
+            :ARG0 c
+            :ARG1 (m2 / move-01
+                  :ARG1 (u2 / unit
+                        :mod (c2 / country
+                              :name (n4 / name
+                                    :op1 "Russia")))
+                  :ARG2 (p4 / province
+                        :name (n5 / name
+                              :op1 "Budapest")))
+            :ARG3 c2))
+
+# ::id real_12.133
+# ::snt England send to Italy that I'm just hoping we can contain Germany. They'll have a huge solo shot if we let them get those Russian and French centers.
+(a / amr-empty)
+
+# ::id real_12.134
+# ::snt Italy send to Turkey that Bounce me in Smyrna?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (b / bounce-03
+            :ARG1 (u / unit
+                  :mod c)
+            :ARG2 (u2 / unit
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey")))
+            :ARG3 (p2 / province
+                  :name (n3 / name
+                        :op1 "Smyrna")))
+      :ARG3 c2)
+
+# ::id real_12.135
+# ::snt England send to Turkey that You gotta work with Russia against A/I, otherwise they'll kill you.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey"))
+                  :op2 (c3 / country
+                        :name (n3 / name
+                              :op1 "Russia")))
+            :ARG3 (c4 / country
+                  :name (n4 / name
+                        :op1 "Aegean"
+                        :op2 "Sea")))
+      :ARG3 c2)
+
+# ::id real_12.136
+# ::snt Russia send to Italy that I'll support you into Trieste next year if I get in.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Italy")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Trieste")))
+            :time (d / date-entity
+                  :year 1903))
+      :ARG3 c2)
+
+# ::id real_12.137
+# ::snt Italy send to England that Yeah, that's the risk. Hopefully he stays loyal to you.
+(a / amr-empty)
+
+# ::id real_12.138
+# ::snt England send to Turkey that Why did you keep Syria?
+(h / have-03
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Turkey"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Syria"))
+      :purpose (a / amr-unknown))
+
+# ::id real_12.139
+# ::snt Italy send to England that Austria is going to go under fast, it seems.
+(a / amr-empty)
+
+# ::id real_12.140
+# ::snt England send to France that C'mon, we can still be friends!
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))))
+
+# ::id real_12.141
+# ::snt Italy send to Russia that Looks like we're on the same side. Could you hit Serbia this move?
+(p / possible-01
+      :ARG1 (a / attack-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Serbia")))
+      :polarity (a2 / amr-unknown))
+
+# ::id real_12.142
+# ::snt Russia send to England that I guess you're right. Well, I'm open to working together, assuming it's ever simple.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))))
+
+# ::id real_12.143
+# ::snt Italy send to Turkey that Okay, I guess you don't want to talk...
+(a / amr-empty)
+
+# ::id real_12.144
+# ::snt England send to Italy that Unless you can work with them!
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.145
+# ::snt Italy send to England that At the moment I'm more worried about Russia than Germany.
+(f / fear-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Russia")))
+
+# ::id real_12.146
+# ::snt England send to Germany that I'm moving to Pic with Bel.
+(m / move-01
+      :ARG1 (u / unit
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG2 (p / province
+            :name (n2 / name
+                  :op1 "Picardy")))
+
+# ::id real_12.147
+# ::snt Russia send to Italy that Can I get a little help against Turkey in return? Or do you want me to just tap Serbia?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod c)
+            :ARG2 (p2 / province
+                  :name (n2 / name
+                        :op1 "Turkey")))
+      :ARG3 (c2 / country
+            :name (n3 / name
+                  :op1 "Italy")))
+
+# ::id real_12.148
+# ::snt Russia send to Italy that And I'm definitely not on the same side as Austria or Turkey. They aren't talking.
+(a / amr-empty)
+
+# ::id real_12.149
+# ::snt Italy send to Austria that Austria, please talk. You're about to get rolled by Russia and I'm happy to help.
+(a / amr-empty)
+
+# ::id real_12.150
+# ::snt England send to Italy that I'm trying to get Turkey to work with Austria against Russia.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey"))
+                  :op2 (c3 / country
+                        :name (n3 / name
+                              :op1 "Austria"))
+                  :op3 (c4 / country
+                        :name (n4 / name
+                              :op1 "Italy")))
+            :ARG3 (c5 / country
+                  :name (n5 / name
+                        :op1 "Russia")))
+      :ARG3 c2)
+
+# ::id real_12.151
+# ::snt England send to Italy that But they seem pretty determined to die.
+(a / amr-empty)
+
+# ::id real_12.152
+# ::snt Russia send to Germany that I've clearly picked a fight with Austria. No need to pick a fight with me as well. What do you say we put aside our differences and work together?
+(a / and
+      :op1 (a2 / attack-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria")))
+      :op2 (p / propose-01
+            :ARG0 c
+            :ARG1 (a3 / ally-01
+                  :ARG1 (a4 / and
+                        :op1 c
+                        :op2 c2))
+            :ARG3 c2))
+
+# ::id real_12.153
+# ::snt Italy send to France that France, please send a message. Would be good for us to keep talking.
+(a / amr-empty)
+
+# ::id real_12.154
+# ::snt England send to Russia that You should be! If Turkey wasn't determined to die, I'd suggest making amends with them.
+(a / amr-empty)
+
+# ::id real_12.155
+# ::snt Italy send to England that I messaged Turkey and he didn't respond.
+(a / amr-empty)
+
+# ::id real_12.156
+# ::snt Russia send to England that You could be my ally. You have nothing to gain from a strong Germany. You should be doing something to limit his growth.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))))
+
+# ::id real_12.157
+# ::snt England send to France that C'mon, I was just playing defense. I didn't actually want to fight you.
+(d / defend-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG3 (c2 / country
+            :name (n2 / name
+                  :op1 "France")))
+
+# ::id real_12.158
+# ::snt Italy send to Russia that Yes, will help you with Turkey.
+(a / amr-empty)
+
+# ::id real_12.159
+# ::snt Russia send to England that Turkey won't even talk. Austria, on the other hand, is. And Austria doesn't deserve to live. He doesn't communicate.
+(a / amr-empty)
+
+# ::id real_12.160
+# ::snt England send to Russia that I am!
+(a / amr-empty)
+
+# ::id real_12.161
+# ::snt Italy send to Austria that Austria, please talk.
+(a / amr-empty)
+
+# ::id real_12.162
+# ::snt Russia send to Italy that Thanks!
+(a / amr-empty)
+
+# ::id real_12.163
+# ::snt Italy send to England that Honestly don't think much can be done about Russia right now.
+(a / amr-empty)
+
+# ::id real_12.164
+# ::snt England send to France that Well now Germany just betrayed me. They're not very good allies.
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.165
+# ::snt Italy send to Russia that What do you think for this move?
+(a / amr-empty)
+
+# ::id real_12.166
+# ::snt Russia send to Turkey that What's going on over there? Italy and I are going to overrun you if you don't talk to me.
+(w / warn-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / attack-01
+            :ARG0 (a2 / and
+                  :op1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy"))
+                  :op2 c)
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Turkey"))
+            :condition (t / tell-01
+                  :polarity -
+                  :ARG0 c3
+                  :ARG2 c))
+      :ARG2 c3)
+
+# ::id real_12.167
+# ::snt England send to Italy that Well, Germany just betrayed me.
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.168
+# ::snt Italy send to England that Did Germany just stab you?
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.169
+# ::snt Russia send to Italy that I'll support Venice to Trieste with two units. Can you support Serbia's hold with Greece? I'll make a play for Ankara with Black Sea.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (s / support-01
+                  :ARG0 c
+                  :ARG1 (m / move-01
+                        :ARG1 (u / unit
+                              :location (p2 / province
+                                    :name (n2 / name
+                                          :op1 "Venice")))
+                        :ARG2 (p3 / province
+                              :name (n3 / name
+                                    :op1 "Trieste"))))
+            :op2 (s2 / support-01
+                  :ARG0 (c2 / country
+                        :name (n4 / name
+                              :op1 "Italy"))
+                  :ARG1 (h / hold-03
+                        :ARG1 (p4 / province
+                              :name (n5 / name
+                                    :op1 "Serbia")))
+                  :instrument (u2 / unit
+                        :mod c2
+                        :location (p5 / province
+                              :name (n6 / name
+                                    :op1 "Greece"))))
+            :op3 (m2 / move-01
+                  :ARG1 (f / fleet
+                        :mod c
+                        :location (s3 / sea
+                              :name (n7 / name
+                                    :op1 "Black"
+                                    :op2 "Sea")))
+                  :ARG2 (p6 / province
+                        :name (n8 / name
+                              :op1 "Ankara"))))
+      :ARG3 c2)
+
+# ::id real_12.170
+# ::snt England send to Germany that I thought we were allies.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.171
+# ::snt Russia send to Italy that If you don't mind, you could tap Bulgaria with Aegean. It's not vital.
+(p / possible-01
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Italy")))
+            :ARG2 (p2 / province
+                  :name (n2 / name
+                        :op1 "Bulgaria"))
+            :instrument (f / fleet
+                  :mod c
+                  :location (s / sea
+                        :name (n3 / name
+                              :op1 "Aegean"
+                              :op2 "Sea")))))
+
+# ::id real_12.172
+# ::snt Italy send to Russia that You might want to talk to England. Seems like he just got stabbed by Germany.
+(p / possible-01
+      :ARG1 (b / betray-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.173
+# ::snt England send to Italy that Yeah. I'm going to fight them off as best I can.
+(a / attack-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Austria")))
+
+# ::id real_12.174
+# ::snt Italy send to Austria that Austria, please respond.
+(a / amr-empty)
+
+# ::id real_12.175
+# ::snt England send to Germany that I'm still willing to work together. But I'm going to have to retake Bel.
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (a2 / ally-01
+                  :ARG1 (a3 / and
+                        :op1 (c / country
+                              :name (n / name
+                                    :op1 "England"))
+                        :op2 (c2 / country
+                              :name (n2 / name
+                                    :op1 "Germany")))))
+      :op2 (h / have-03
+            :ARG0 c
+            :ARG1 (p2 / province
+                  :name (n3 / name
+                        :op1 "Belgium"))))
+
+# ::id real_12.176
+# ::snt Russia send to Italy that I'm trying to. He thinks he can stick with Germany and get away with it.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.177
+# ::snt England send to Russia that Guess you were right.
+(a / amr-empty)
+
+# ::id real_12.178
+# ::snt Italy send to Russia that Hey Russia, you didn't tell me about Bulgaria. I'd like to take it for now if that's alright with you. You'll be up 2 Scs already from Serbia and Ankara.
+(a / and
+      :op1 (t / tell-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (h / have-03
+                  :ARG0 c
+                  :ARG1 (p / province
+                        :name (n2 / name
+                              :op1 "Bulgaria")))
+            :ARG2 (c2 / country
+                  :name (n3 / name
+                        :op1 "Italy")))
+      :op2 (e / expect-01
+            :ARG0 c
+            :ARG1 h
+            :ARG0 c2
+            :ARG1 p))
+
+# ::id real_12.179
+# ::snt Russia send to Austria that Please start communicating. We can still work together against Germany.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria")))
+      :ARG3 (c3 / country
+            :name (n3 / name
+                  :op1 "Germany")))
+
+# ::id real_12.180
+# ::snt England send to Italy that Russia seems to be on your side, fortunately.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "Italy")))
+
+# ::id real_12.181
+# ::snt Italy send to England that Hopefully you can work something out.
+(a / amr-empty)
+
+# ::id real_12.182
+# ::snt England send to Austria that Guess you're in a pretty rough spot.
+(a / amr-empty)
+
+# ::id real_12.183
+# ::snt Russia send to Italy that That's fine. Just tap it with one unit.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "Italy")))
+
+# ::id real_12.184
+# ::snt Italy send to England that Yeah, Russia seems to be a nice guy.
+(a / amr-empty)
+
+# ::id real_12.185
+# ::snt England send to Austria that Could've used an ally.
+(a / amr-empty)
+
+# ::id real_12.186
+# ::snt Italy send to Russia that Okay, great. Thanks a ton.
+(a / amr-empty)
+
+# ::id real_12.187
+# ::snt England send to France that I'm willing to work with you still.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))))
+
+# ::id real_12.188
+# ::snt England send to France that You just wanna let Germany take everything?
+(a / amr-empty)
+
+# ::id real_12.189
+# ::snt Italy send to Russia that Would it be okay with you if I took Trieste and you got Vienna?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / and
+            :op1 (h / have-03
+                  :ARG0 c
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Trieste")))
+            :op2 (h2 / have-03
+                  :ARG0 (c2 / country
+                        :name (n3 / name
+                              :op1 "Russia"))
+                  :ARG1 (p3 / province
+                        :name (n4 / name
+                              :op1 "Vienna"))))
+      :ARG3 c2)
+
+# ::id real_12.190
+# ::snt Russia send to Italy that I'll support Venice to Trieste with two units this time.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :location (p2 / province
+                              :name (n2 / name
+                                    :op1 "Venice")))
+                  :ARG2 (p3 / province
+                        :name (n3 / name
+                              :op1 "Trieste"))))
+      :ARG3 (c2 / country
+            :name (n4 / name
+                  :op1 "Italy")))
+
+# ::id real_12.191
+# ::snt England send to Russia that We need to contain Germany.
+(a / amr-empty)
+
+# ::id real_12.192
+# ::snt England send to Russia that I'm trying to get France to back off.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (s / support-01
+            :polarity -
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))
+            :ARG1 (a / attack-01
+                  :ARG0 (a2 / and
+                        :op1 c
+                        :op2 (c3 / country
+                              :name (n3 / name
+                                    :op1 "Russia")))
+                  :ARG1 (c4 / country
+                        :name (n4 / name
+                              :op1 "Austria"))))
+      :ARG3 c2)
+
+# ::id real_12.193
+# ::snt Russia send to Italy that Yeah, I'm fine with you taking Trieste. Vienna I need for the time being. I'd also like to get a little more help against Turkey. How about you move to Eastern Med?
+(a / and
+      :op1 (a2 / agree-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (h / have-03
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy"))
+                  :ARG1 (p / province
+                        :name (n3 / name
+                              :op1 "Trieste")))
+            :ARG2 c2)
+      :op2 (p2 / propose-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (f / fleet
+                        :mod c2)
+                  :ARG2 (s / sea
+                        :name (n4 / name
+                              :op1 "Eastern"
+                              :op2 "Mediterranean")))
+            :ARG3 c2))
+
+# ::id real_12.194
+# ::snt Italy send to France that France, please send me a message. We have no beef right now and I'm happy to maintain peace with you.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (p2 / peace
+            :op1 c
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France")))
+      :ARG3 c2)
+
+# ::id real_12.195
+# ::snt England send to Italy that Looking good for you so far!
+(a / amr-empty)
+
+# ::id real_12.196
+# ::snt Russia send to England that Yes, we do. You could actually stab Germany right now, and take Holland. You'll probably get into Denmark in the fall.
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (a2 / and
+                  :op1 (b / betray-01
+                        :ARG0 (c / country
+                              :name (n / name
+                                    :op1 "England"))
+                        :ARG1 (c2 / country
+                              :name (n2 / name
+                                    :op1 "Germany"))
+                        :time (d / date-entity
+                              :year 1907
+                              :season (f / fall)))
+                  :op2 (h / have-03
+                        :ARG0 c2
+                        :ARG1 (p2 / province
+                              :name (n3 / name
+                                    :op1 "Holland")))
+                  :op3 (e / expect-01
+                        :ARG0 c
+                        :ARG1 (m / move-01
+                              :ARG1 (u / unit
+                                    :mod c2)
+                              :ARG2 (p3 / province
+                                    :name (n4 / name
+                                          :op1 "Denmark"))
+                              :time (d2 / date-entity
+                                    :year 1901
+                                    :season f))))))
+
+# ::id real_12.197
+# ::snt England send to Italy that Just don't let Russia get too big.
+(a / amr-empty)
+
+# ::id real_12.198
+# ::snt Italy send to Russia that Going to move Ionian to Adriatic to make sure I get Trieste. Can help you with Turkey next turn.
+(a / and
+      :op1 (m / move-01
+            :ARG1 (f / fleet
+                  :location (s / sea
+                        :name (n / name
+                              :op1 "Ionian"
+                              :op2 "Sea"))
+                  :mod (c / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :ARG2 (s2 / sea
+                  :name (n3 / name
+                        :op1 "Adriatic"
+                        :op2 "Sea"))
+            :purpose (h / have-03
+                  :ARG0 c
+                  :ARG1 (p / province
+                        :name (n4 / name
+                              :op1 "Trieste"))))
+      :op2 (p2 / propose-01
+            :ARG0 c
+            :ARG1 (s3 / support-01
+                  :ARG0 c
+                  :ARG1 (a2 / ally-01
+                        :ARG1 a
+                        :op1 c
+                        :op2 (c2 / country
+                              :name (n5 / name
+                                    :op1 "Russia")))
+                  :ARG3 (c3 / country
+                        :name (n6 / name
+                              :op1 "Turkey")))
+            :ARG3 c2))
+
+# ::id real_12.199
+# ::snt Russia send to Turkey that Do you want to work together now? I'd be happy to help you fend off Italy.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Italy"))))
+
+# ::id real_12.200
+# ::snt Italy send to England that Yeah, I'm keeping an eye on him. We'll see how this goes.
+(a / amr-empty)
+
+# ::id real_12.201
+# ::snt England send to Russia that I'm in no position to stab. I have to defend against France.
+(a / and
+      :op1 (p / possible-01
+            :polarity -
+            :ARG1 (b / betray-01
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :ARG1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Austria"))))
+      :op2 (d / defend-01
+            :ARG0 c
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "France"))))
+
+# ::id real_12.202
+# ::snt Italy send to Russia that So just to clarify, Venice-tyrolia, Rome-venice, Ionian-adriatic.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / and
+            :op1 (m / move-01
+                  :ARG1 (u / unit
+                        :location (p2 / province
+                              :name (n2 / name
+                                    :op1 "Venice")))
+                  :ARG2 (p3 / province
+                        :name (n3 / name
+                              :op1 "Tyrolia")))
+            :op2 (m2 / move-01
+                  :ARG1 (u2 / unit
+                        :location (p4 / province
+                              :name (n4 / name
+                                    :op1 "Rome")))
+                  :ARG2 (p5 / province
+                        :name (n5 / name
+                              :op1 "Vienna")))
+            :op3 (m3 / move-01
+                  :ARG1 (f / fleet
+                        :mod c
+                        :location (s / sea
+                              :name (n6 / name
+                                    :op1 "Ionian"
+                                    :op2 "Sea")))
+                  :ARG2 s
+                  :name (n7 / name
+                        :op1 "Adriatic"
+                        :op2 "Sea")))
+      :ARG3 (c2 / country
+            :name (n8 / name
+                  :op1 "Russia")))
+
+# ::id real_12.203
+# ::snt England send to Germany that Are you willing to work with me?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany"))))
+      :polarity (a3 / amr-unknown))
+
+# ::id real_12.204
+# ::snt Russia send to Germany that England could stab you right now and take Holland and Denmark from you. I have no interest in attacking you, especially if you pull your units back to defend against England.
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (a2 / and
+                  :op1 (b / betray-01
+                        :ARG0 (c / country
+                              :name (n / name
+                                    :op1 "England"))
+                        :ARG1 (c2 / country
+                              :name (n2 / name
+                                    :op1 "Germany")))
+                  :op2 (h / have-03
+                        :ARG0 c
+                        :ARG1 (a3 / and
+                              :op1 (p2 / province
+                                    :name (n3 / name
+                                          :op1 "Holland"))
+                              :op2 (p3 / province
+                                    :name (n4 / name
+                                          :op1 "Denmark")))))
+            :op2 (a4 / attack-01
+                  :polarity -
+                  :ARG0 c
+                  :ARG1 c2)))
+
+# ::id real_12.205
+# ::snt England send to Italy that Looks like you can easily get Trieste and Bul this year.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (h / have-03
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy"))
+            :ARG1 (a / and
+                  :op1 (p / province
+                        :name (n3 / name
+                              :op1 "Trieste"))
+                  :op2 (p2 / province
+                        :name (n4 / name
+                              :op1 "Bulgaria")))
+            :time (d / date-entity
+                  :year 1907)))
+
+# ::id real_12.206
+# ::snt Italy send to England that Yup!
+(a / amr-empty)
+
+# ::id real_12.207
+# ::snt England send to Germany that I'll still work with you against Russia, but I have to deal with France as well.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany")))
+      :ARG3 (c3 / country
+            :name (n3 / name
+                  :op1 "Russia")))
+
+# ::id real_12.208
+# ::snt Russia send to Turkey that Hello? Turkey? Are you going to talk to me or not?
+(a / amr-empty)
+
+# ::id real_12.209
+# ::snt Russia send to Turkey that Do you want Bulgaria back? I can help you get back into Bulgaria. Just talk to me.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Turkey")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Bulgaria"))))
+      :ARG3 c2)
+
+# ::id real_12.210
+# ::snt England send to France that How much longer do you want to fight?
+(a / amr-empty)
+
+# ::id real_12.211
+# ::snt Italy send to England that Kinda wish Austria and Turkey were a bit more competent right now, unfortunately.
+(a / amr-empty)
+
+# ::id real_12.212
+# ::snt Russia send to England that Looks like France has backed off of you. You should definitely be in position to stab now. You could take Holland and Denmark next year, maybe even Norway.
+(a / and
+      :op1 (e / expect-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (b / betray-01
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "England"))
+                  :ARG1 (c3 / country
+                        :name (n3 / name
+                              :op1 "France"))))
+      :op2 (p / possible-01
+            :ARG1 (h / have-03
+                  :ARG0 c2
+                  :ARG1 (a2 / and
+                        :op1 (p2 / province
+                              :name (n4 / name
+                                    :op1 "Holland"))
+                        :op2 (p3 / province
+                              :name (n5 / name
+                                    :op1 "Denmark")))
+                  :time (d / date-entity
+                        :year 1902))))
+
+# ::id real_12.213
+# ::snt England send to Italy that Things are looking pretty good for you!
+(a / amr-empty)
+
+# ::id real_12.214
+# ::snt Russia send to Italy that Why the stab? I've been a good ally.
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Italy")))
+
+# ::id real_12.215
+# ::snt England send to Russia that I'm not in position to stab. If I attack Germany, France will just overrun me.
+(a / and
+      :op1 (p / possible-01
+            :polarity -
+            :ARG1 (b / betray-01
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :ARG1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Austria"))))
+      :op2 (e / expect-01
+            :ARG0 c
+            :ARG1 (a2 / attack-01
+                  :ARG0 c
+                  :ARG1 c2
+                  :condition (a3 / attack-01
+                        :ARG0 (c3 / country
+                              :name (n3 / name
+                                    :op1 "Germany"))
+                        :ARG1 c))))
+
+# ::id real_12.216
+# ::snt Italy send to England that And you as well!
+(a / amr-empty)
+
+# ::id real_12.217
+# ::snt Russia send to Turkey that Hello? Turkey? Please respond. I am your only hope at survival. Please work with me.
+(a / ally-01
+      :ARG1 (c / country
+            :name (n / name
+                  :op1 "Turkey"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "Russia")))
+
+# ::id real_12.218
+# ::snt England send to Germany that I'm not going to attack you. We should still work together against France.
+(a / and
+      :op1 (a2 / attack-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany")))
+      :op2 (a3 / ally-01
+            :ARG1 (a4 / and
+                  :op1 c
+                  :op2 c2)
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "France"))))
+
+# ::id real_12.219
+# ::snt Italy send to Russia that Sorry Russia, I'm just worried that you're going to roll over everybody else and solo.
+(f / fear-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / attack-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia"))
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Turkey"))))
+
+# ::id real_12.220
+# ::snt Italy send to Russia that And your growth was a bit concerning.
+(a / amr-empty)
+
+# ::id real_12.221
+# ::snt England send to Italy that Only so far as I can't be overrun by France.
+(a / amr-empty)
+
+# ::id real_12.222
+# ::snt Russia send to England that No, Germany is going to abandon him and focus on you. You don't have a choice.
+(a / attack-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Germany")))
+
+# ::id real_12.223
+# ::snt Italy send to Austria that Austria, please talk.
+(a / amr-empty)
+
+# ::id real_12.224
+# ::snt Italy send to Austria that I'm willing to help you.
+(a / amr-empty)
+
+# ::id real_12.225
+# ::snt England send to Germany that Hello?
+(a / amr-empty)
+
+# ::id real_12.226
+# ::snt Russia send to England that The ball is in your court.
+(a / amr-empty)
+
+# ::id real_12.227
+# ::snt Italy send to England that Yeah, that's a bit of a pickle.
+(a / amr-empty)
+
+# ::id real_12.228
+# ::snt Italy send to England that Any chance you could make peace with France?
+(p / possible-01
+      :ARG1 (p2 / peace
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France")))
+      :polarity (a / amr-unknown))
+
+# ::id real_12.229
+# ::snt England send to Russia that And abandon their centers to France?
+(a / amr-empty)
+
+# ::id real_12.230
+# ::snt Russia send to Italy that So why take Bulgaria from me?
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Bulgaria")))
+      :purpose (a / amr-unknown))
+
+# ::id real_12.231
+# ::snt Italy send to Turkey that Turkey, can you please support hold Bulgaria?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (s / support-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Turkey"))
+            :ARG1 (h / hold-03
+                  :ARG0 c
+                  :ARG1 (p2 / province
+                        :name (n3 / name
+                              :op1 "Bulgaria"))))
+      :ARG3 c2)
+
+# ::id real_12.232
+# ::snt England send to Italy that I'm trying. But they don't seem very receptive.
+(a / amr-empty)
+
+# ::id real_12.233
+# ::snt Italy send to Russia that Like I said, you're very powerful right now and it's scary.
+(f / fear-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Russia")))
+
+# ::id real_12.234
+# ::snt England send to France that I'm willing to make peace with you.
+(p / possible-01
+      :ARG1 (p2 / peace
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))))
+
+# ::id real_12.235
+# ::snt Italy send to Austria that Austria, please talk. We need to work together.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria"))))
+
+# ::id real_12.236
+# ::snt Russia send to Italy that How about we just cut Turkey out of this?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (p2 / prevent-01
+            :ARG0 (a / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c3 / country
+                              :name (n3 / name
+                                    :op1 "Turkey")))
+                  :ARG2 (p3 / province
+                        :name (n4 / name
+                              :op1 "Greece"))))
+      :ARG3 c2)
+
+# ::id real_12.237
+# ::snt England send to Germany that C'mon, I still wanna work with you!
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.238
+# ::snt England send to Germany that I'm not a threat!
+(t / threaten-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "Germany")))
+
+# ::id real_12.239
+# ::snt Italy send to Turkey that Turkey, please support hold Bulgaria again.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (s / support-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Turkey"))
+            :ARG1 (h / hold-03
+                  :ARG0 c
+                  :ARG1 (p2 / province
+                        :name (n3 / name
+                              :op1 "Bulgaria"))))
+      :ARG3 c2)
+
+# ::id real_12.240
+# ::snt Russia send to Turkey that Are you just going to never talk?
+(a / amr-empty)
+
+# ::id real_12.241
+# ::snt England send to Italy that Or, perhaps, they do.
+(a / amr-empty)
+
+# ::id real_12.242
+# ::snt Italy send to Russia that Would you still work with me?
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia"))))
+
+# ::id real_12.243
+# ::snt Russia send to Italy that No response?
+(a / amr-empty)
+
+# ::id real_12.244
+# ::snt Italy send to England that Welp, here comes Germany.
+(a / amr-empty)
+
+# ::id real_12.245
+# ::snt England send to Austria that Yikes, not looking good.
+(a / amr-empty)
+
+# ::id real_12.246
+# ::snt Russia send to Italy that Yes, but I would like Vienna. I also want to kill Turkey and go from there.
+(a / amr-empty)
+
+# ::id real_12.247
+# ::snt Russia send to England that Here comes that German stab.
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.248
+# ::snt Russia send to England that Why is it that Austria, Turkey, and France never talk?
+(t / tell-01
+      :polarity -
+      :ARG0 (a / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Austria"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Turkey"))
+            :op3 (c3 / country
+                  :name (n3 / name
+                        :op1 "France")))
+      :ARG2 (a2 / and
+            :op1 c2
+            :op2 c3))
+
+# ::id real_12.249
+# ::snt England send to Russia that Yikes, wish you could help me against Germany.
+(a / amr-empty)
+
+# ::id real_12.250
+# ::snt Italy send to England that Don't think there's a way I can win this fight against Russia, unfortunately.
+(a / amr-empty)
+
+# ::id real_12.251
+# ::snt Russia send to Germany that How is it that Austria, France, and Turkey never talk?
+(a / amr-empty)
+
+# ::id real_12.252
+# ::snt Italy send to Russia that We'll have to see how this turn goes first.
+(a / amr-empty)
+
+# ::id real_12.253
+# ::snt Russia send to England that I can't right now. You should have worked with me when I told you to.
+(p / possible-01
+      :polarity -
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))))
+
+# ::id real_12.254
+# ::snt Russia send to England that Please don't take St. Pete. I can't afford a disband right now.
+(a / and
+      :op1 (h / have-03
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "St."
+                        :op2 "Petersburg")))
+      :op2 (p2 / possible-01
+            :ARG1 (r / remove-01
+                  :ARG1 (u / unit
+                        :mod c))))
+
+# ::id real_12.255
+# ::snt England send to Russia that They don't seem very good at the game.
+(a / amr-empty)
+
+# ::id real_12.256
+# ::snt Russia send to England that I can't right now. You should have worked with me when I told you to.
+(p / possible-01
+      :polarity -
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))))
+
+# ::id real_12.257
+# ::snt Italy send to Russia that How would you propose we split Turkey?
+(a / amr-empty)
+
+# ::id real_12.258
+# ::snt England send to Austria that Looking much better for you now!
+(a / amr-empty)
+
+# ::id real_12.259
+# ::snt Russia send to England that Turkey doesn't talk, and he's terrible. Austria is just plain bad. And he won't even communicate with me.
+
+France doesn't talk, either.
+(a / amr-empty)
+
+# ::id real_12.260
+# ::snt Italy send to England that Maybe you and France can make up and attack Germany together?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "England"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "France")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.261
+# ::snt England send to Italy that France doesn't seem very smart. I've offered them every chance to work with me. But they just keep attacking.
+(a / and
+      :op1 (p / propose-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG3 (c2 / country
+                  :name (n2 / name
+                        :op1 "France")))
+      :op2 (a2 / attack-01
+            :ARG0 c2
+            :ARG1 c))
+
+# ::id real_12.262
+# ::snt Italy send to France that Maybe you and England can make up and attack Germany together?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "France"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.263
+# ::snt Russia send to Italy that Let's go with what we've got for now, and figure it out in a year or so. I still want Vienna.
+(a / amr-empty)
+
+# ::id real_12.264
+# ::snt England send to Russia that I should have. But Germany isn't communicating with me either. It's hard to work with someone who won't respond.
+(a / and
+      :op1 (t / tell-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany")))
+      :op2 (c3 / communicate-01
+            :ARG0 c2
+            :ARG2 (c4 / country
+                  :name (n3 / name
+                        :op1 "Russia"))))
+
+# ::id real_12.265
+# ::snt Italy send to England that Yeah, that's unfortunate.
+(a / amr-empty)
+
+# ::id real_12.266
+# ::snt Russia send to Turkey that Do you want to take Bulgaria? Or do you just want to sit there and let Italy kill you?
+(p / possible-01
+      :ARG1 (o / or
+            :op1 (h / have-03
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "Turkey"))
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Bulgaria")))
+            :op2 (a / attack-01
+                  :ARG0 c
+                  :ARG1 (c2 / country
+                        :name (n3 / name
+                              :op1 "Italy")))))
+
+# ::id real_12.267
+# ::snt Russia send to England that Well, maybe we can stick together, you, me, and Italy, and cut everyone else out.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (a2 / ally-01
+                  :ARG1 (a3 / and
+                        :op1 c
+                        :op2 (c2 / country
+                              :name (n2 / name
+                                    :op1 "England"))
+                        :op3 (c3 / country
+                              :name (n3 / name
+                                    :op1 "Italy")))
+                  :ARG3 (a4 / and
+                        :op1 c2
+                        :op2 (c4 / country
+                              :op3 c2))
+                  :op2 (p2 / prevent-01
+                        :ARG0 (a5 / and
+                              :op1 c
+                              :op2 c2
+                              :op3 (c5 / country)
+                              :ARG1 a2
+                              :ARG1 (a6 / and
+                                    :op1 c2
+                                    :op2 c))))
+            :ARG3 c2))
+
+# ::id real_12.268
+# ::snt Italy send to Russia that Alright.
+(a / amr-empty)
+
+# ::id real_12.269
+# ::snt Italy send to Russia that Let me take Serbia back then.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Serbia")))
+      :ARG3 (c2 / country
+            :name (n3 / name
+                  :op1 "Russia")))
+
+# ::id real_12.270
+# ::snt Russia send to England that This game is weird. Turkey has literally never responded to me. Neither has France. And Austria doesn't want to talk. So weird.
+(a / amr-empty)
+
+# ::id real_12.271
+# ::snt England send to Russia that I'm not planning to attack you. But Germany might move on St. Pete.
+(a / and
+      :op1 (a2 / attack-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia")))
+      :op2 (p / possible-01
+            :ARG1 (a3 / attack-01
+                  :ARG0 (c3 / country
+                        :name (n3 / name
+                              :op1 "Germany"))
+                  :ARG1 (p2 / province
+                        :name (n4 / name
+                              :op1 "St."
+                              :op2 "Petersburg")))))
+
+# ::id real_12.272
+# ::snt Italy send to Austria that Austria, I'm trying to help you. We need to communicate.
+(a / amr-empty)
+
+# ::id real_12.273
+# ::snt Italy send to Austria that Austria, talk to me please. I want to help you.
+(a / amr-empty)
+
+# ::id real_12.274
+# ::snt Russia send to Italy that Okay, I'll pull out of Serbia.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod c
+                  :location (p / province
+                        :name (n2 / name
+                              :op1 "Serbia"))))
+      :ARG2 (c2 / country
+            :name (n3 / name
+                  :op1 "Italy")))
+
+# ::id real_12.275
+# ::snt England send to Germany that Do you still want to fight?
+(a / amr-empty)
+
+# ::id real_12.276
+# ::snt Italy send to France that France?
+(a / amr-empty)
+
+# ::id real_12.277
+# ::snt England send to Germany that Please communicate with me.
+(a / amr-empty)
+
+# ::id real_12.278
+# ::snt Italy send to France that Why would you destroy Paris?
+(a / attack-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "France"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Paris"))
+      :purpose (a2 / amr-unknown))
+
+# ::id real_12.279
+# ::snt Russia send to Italy that Can I have Vienna now?
+(h / have-03
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Vienna"))
+      :polarity (a / amr-unknown))
+
+# ::id real_12.280
+# ::snt Italy send to France that Oof.
+(a / amr-empty)
+
+# ::id real_12.281
+# ::snt England send to France that Why won't you respond?
+(a / amr-empty)
+
+# ::id real_12.282
+# ::snt Italy send to Austria that Would you be willing to support Serbia into Budapest?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (s / support-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Austria"))
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :location (p2 / province
+                              :name (n3 / name
+                                    :op1 "Serbia")))
+                  :ARG2 (p3 / province
+                        :name (n4 / name
+                              :op1 "Budapest"))))
+      :ARG3 c2)
+
+# ::id real_12.283
+# ::snt Russia send to England that What are the chances that Germany and Italy know each other?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Germany"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy"))))
+      :polarity (a3 / amr-unknown))
+
+# ::id real_12.284
+# ::snt Italy send to Austria that Or if you have a different idea, I'd love to hear it.
+(a / amr-empty)
+
+# ::id real_12.285
+# ::snt England send to Russia that Really not looking good for me.
+(a / amr-empty)
+
+# ::id real_12.286
+# ::snt Russia send to Italy that Is that a no?
+(a / amr-empty)
+
+# ::id real_12.287
+# ::snt Italy send to Russia that As long as you take Vienna with Bohemia.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / and
+            :op1 (h / have-03
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))
+                  :ARG1 (p2 / province
+                        :name (n3 / name
+                              :op1 "Vienna"))
+                  :instrument (u / unit
+                        :mod c2
+                        :location (p3 / province
+                              :name (n4 / name
+                                    :op1 "Bohemia"))))
+            :op2 (h2 / have-03
+                  :ARG0 c2
+                  :ARG1 (p4 / province
+                        :name (n5 / name
+                              :op1 "Bohemia"))))
+      :ARG3 c2)
+
+# ::id real_12.288
+# ::snt England send to Russia that I have no idea.
+(a / amr-empty)
+
+# ::id real_12.289
+# ::snt Italy send to Russia that Deal?
+(a / amr-empty)
+
+# ::id real_12.290
+# ::snt Russia send to England that Try to use your unit in Spain against Italy. Maybe you can get some centers there, and maybe I'll be strong enough to start hitting Germany, and we'll be able to cut out Italy and Turkey.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (a2 / attack-01
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "England"))
+                  :ARG1 (c3 / country
+                        :name (n3 / name
+                              :op1 "Italy")))
+            :op2 (p2 / possible-01
+                  :ARG1 (a3 / attack-01
+                        :ARG0 (a4 / and
+                              :op1 c
+                              :op2 c2)
+                        :ARG1 (a5 / and
+                              :op1 (c4 / country
+                                    :name (n4 / name
+                                          :op1 "Germany"))
+                              :op2 (c5 / country
+                                    :name (n5 / name
+                                          :op1 "Turkey")))))
+            :ARG3 c2))
+
+# ::id real_12.291
+# ::snt Italy send to England that Well, seems like France is all yours. I'll try to attack Germany next year if I can somehow survive this Russian offensive.
+(a / and
+      :op1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))
+            :time (d / date-entity
+                  :year 1907))
+      :op2 (a2 / attack-01
+            :ARG0 c
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany"))
+            :condition (s / survive-01
+                  :ARG0 (c4 / country
+                        :name (n4 / name
+                              :op1 "Russia"))
+                  :ARG1 c2)))
+
+# ::id real_12.292
+# ::snt Russia send to Italy that No. Take it with Tyrolia.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "Tyrolia")))
+      :ARG2 (c2 / country
+            :name (n3 / name
+                  :op1 "Italy")))
+
+# ::id real_12.293
+# ::snt England send to Russia that I would if France would talk to me.
+(a / amr-empty)
+
+# ::id real_12.294
+# ::snt Italy send to England that If you need any diplomatic help, I'm your man.
+(a / amr-empty)
+
+# ::id real_12.295
+# ::snt Russia send to Italy that I will cut your support with Bohemia, so don't try anything.
+(p / prevent-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Italy"))
+                        :location (p2 / province
+                              :name (n3 / name
+                                    :op1 "Bohemia"))))))
+
+# ::id real_12.296
+# ::snt England send to Italy that That would be much appreciated.
+(a / amr-empty)
+
+# ::id real_12.297
+# ::snt Italy send to Russia that I don't feel comfortable doing that.
+(r / reject-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (m / move-01
+            :ARG1 (f / fleet
+                  :mod c)
+            :ARG2 (s / sea
+                  :name (n2 / name
+                        :op1 "Eastern"
+                        :op2 "Mediterranean"))))
+
+# ::id real_12.298
+# ::snt Russia send to France that Why don't you ever respond to anyone?
+(a / amr-empty)
+
+# ::id real_12.299
+# ::snt England send to Italy that Wish I could do more for you.
+(a / amr-empty)
+
+# ::id real_12.300
+# ::snt Russia send to England that It's a very, very quiet game.
+(a / amr-empty)
+
+# ::id real_12.301
+# ::snt Russia send to England that It's so annoying. Every game I play, there is at least one country that just flat out won't talk. And it's always the countries in the center of the board that are the worst at communicating.
+(a / amr-empty)
+
+# ::id real_12.302
+# ::snt England send to France that You still don't want to talk?
+(a / amr-empty)
+
+# ::id real_12.303
+# ::snt Italy send to Austria that Well, thanks for that.
+(a / amr-empty)
+
+# ::id real_12.304
+# ::snt Italy send to Austria that I'll make sure you survive.
+(a / amr-empty)
+
+# ::id real_12.305
+# ::snt England send to France that Can we work together?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "France"))))
+      :ARG3 c2)
+
+# ::id real_12.306
+# ::snt Italy send to France that France, I'm going to move Venice to Piedmont to help you out.
+(m / move-01
+      :ARG1 (u / unit
+            :mod (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :location (p / province
+                  :name (n2 / name
+                        :op1 "Venice")))
+      :ARG2 (p2 / province
+            :name (n3 / name
+                  :op1 "Piedmont")))
+
+# ::id real_12.307
+# ::snt England send to Russia that I wish I could play a normal game.
+(a / amr-empty)
+
+# ::id real_12.308
+# ::snt Russia send to Germany that Hey, I need your help against Italy, and eventually England.
+(a / amr-empty)
+
+# ::id real_12.309
+# ::snt Italy send to England that You can actually get Norway this turn!
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Norway"))
+            :time (d / date-entity
+                  :year 1901
+                  :season (f / fall))))
+
+# ::id real_12.310
+# ::snt England send to Italy that Things are looking pretty bad.
+(a / amr-empty)
+
+# ::id real_12.311
+# ::snt Italy send to England that Well, try to anyways.
+(a / amr-empty)
+
+# ::id real_12.312
+# ::snt Russia send to England that Yeah, I wish there were a lot of good players in this game, so we could have an actually enjoyable game.
+(a / amr-empty)
+
+# ::id real_12.313
+# ::snt England send to Italy that You should send some fleets west!
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (m / move-01
+            :ARG1 (f / fleet
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :direction (w / west))
+      :ARG3 c2)
+
+# ::id real_12.314
+# ::snt Russia send to England that Well, I know who I'm rooting for now. It's Germany and Italy, if they know each other or not. You might be able to pull a survival out of this.
+(a / amr-empty)
+
+# ::id real_12.315
+# ::snt Italy send to England that I'll make sure France doesn't attack you.
+(p / possible-01
+      :ARG1 (a / attack-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "France"))
+            :ARG1 (c2 / country
+                  :name (n2 / name
+                        :op1 "England"))))
+
+# ::id real_12.316
+# ::snt England send to Russia that I wish there were more games set up for people to actually talk. And, you know, where people actually wanted to play the game.
+(a / amr-empty)
+
+# ::id real_12.317
+# ::snt Italy send to England that Yeah, that's the plan.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.318
+# ::snt Russia send to Germany that Hello?
+(a / amr-empty)
+
+# ::id real_12.319
+# ::snt England send to Italy that Thanks.
+(a / amr-empty)
+
+# ::id real_12.320
+# ::snt Italy send to France that Maybe you can work with England again? He seems willing to help you out against Germany.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "France"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.321
+# ::snt Russia send to England that I mean, I knew from the start that Turkey and Austria wouldn't be good. It was pretty obvious that they didn't really want to play the game.
+(a / amr-empty)
+
+# ::id real_12.322
+# ::snt Russia send to England that If I had known that Austria and Turkey wouldn't be very good, I would have been able to communicate with them and set up a good alliance with one or the other, and then with the other. But they don't talk, and when they do, they're not as competent as they should be.
+(a / amr-empty)
+
+# ::id real_12.323
+# ::snt England send to Italy that This is frustrating. I don't think Germany or France have a good grasp of the game.
+(a / amr-empty)
+
+# ::id real_12.324
+# ::snt Italy send to England that No problem.
+(a / amr-empty)
+
+# ::id real_12.325
+# ::snt England send to Italy that Just absolutely no idea what they're thinking.
+(a / amr-empty)
+
+# ::id real_12.326
+# ::snt Russia send to England that Please support St. Pete to Norway.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "England"))
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :location (p2 / province
+                              :name (n3 / name
+                                    :op1 "St."
+                                    :op2 "Petersburg")))
+                  :ARG2 (p3 / province
+                        :name (n4 / name
+                              :op1 "Norway"))))
+      :ARG3 c2)
+
+# ::id real_12.327
+# ::snt Russia send to England that Or do whatever you think is best.
+(a / amr-empty)
+
+# ::id real_12.328
+# ::snt Italy send to England that The France player hasn't responded to any of my messages since autumn 1903, unfortunately.
+(a / amr-empty)
+
+# ::id real_12.329
+# ::snt Italy send to England that Think we're both on our own. If you can't see a way out, let me know.
+(a / amr-empty)
+
+# ::id real_12.330
+# ::snt England send to Germany that I'm still willing to make peace with you if you are.
+(p / possible-01
+      :ARG1 (p2 / peace
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.331
+# ::snt Italy send to Russia that Seems like Germany is about to attack you.
+(w / warn-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / attack-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Russia")))
+      :ARG2 c3)
+
+# ::id real_12.332
+# ::snt Italy send to Russia that Why do you insist on attacking me?
+(a / attack-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Italy"))
+      :purpose (a2 / amr-unknown))
+
+# ::id real_12.333
+# ::snt Russia send to Italy that I just want to eliminate Turkey. I've wanted to do that since 1901.
+(a / amr-empty)
+
+# ::id real_12.334
+# ::snt England send to France that Come on, talk to me!
+(a / amr-empty)
+
+# ::id real_12.335
+# ::snt Italy send to France that France, talk to me please. I'm trying to help you out.
+(a / amr-empty)
+
+# ::id real_12.336
+# ::snt England send to Russia that I'll support you in the fall.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Russia")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Moscow")))
+            :time (d / date-entity
+                  :year 1907
+                  :season (f / fall)))
+      :ARG3 c2)
+
+# ::id real_12.337
+# ::snt Russia send to Italy that And please stop telling me that Germany is about to attack me. He isn't. You're the one that's about to attack me.
+(a / and
+      :op1 (t / tell-01
+            :mode imperative
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (a2 / attack-01
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany"))
+                  :ARG1 c)
+            :ARG2 (c3 / country
+                  :name (n3 / name
+                        :op1 "Russia")))
+      :op2 (w / warn-01
+            :mode imperative
+            :ARG0 c3
+            :ARG1 (a3 / attack-01
+                  :ARG0 c2
+                  :ARG1 c)
+            :ARG2 c2))
+
+# ::id real_12.338
+# ::snt Italy send to France that Support yourself into Marseilles.
+(s / support-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "France")))
+            :ARG2 (p / province
+                  :name (n3 / name
+                        :op1 "Marseille"))))
+
+# ::id real_12.339
+# ::snt England send to Italy that I don't know. I'm holding out as long as I can.
+(a / amr-empty)
+
+# ::id real_12.340
+# ::snt Russia send to England that Fine.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.341
+# ::snt Italy send to Russia that Well, seems like Germany told you something different.
+(t / tell-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Russia"))
+      :ARG2 (c3 / country
+            :name (n3 / name
+                  :op1 "Italy")))
+
+# ::id real_12.342
+# ::snt Russia send to England that Well, I could still lose St. Pete to that fleet in Norway. So maybe you should support me in right now.
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (l / lose-02
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "St."
+                              :op2 "Petersburg"))))
+      :op2 (p3 / propose-01
+            :ARG0 c
+            :ARG1 (s / support-01
+                  :ARG0 c
+                  :name (n3 / name
+                        :op1 "England"))
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod c)
+                  :ARG2 (p4 / province
+                        :name (n4 / name
+                              :op1 "Norway")))
+            :time (d / date-entity
+                  :year 1902
+                  :season (f / fall)))
+      :ARG3 c)
+
+# ::id real_12.343
+# ::snt England send to France that This game is called diplomacy for a reason. It's difficult to play if you don't communicate.
+(a / amr-empty)
+
+# ::id real_12.344
+# ::snt Italy send to England that Russia's being very stubborn. Claims Germany is about to attack Russia even though Germany has never once done so.
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (a2 / attack-01
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "Germany"))
+                  :ARG1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))))
+      :op2 (p2 / possible-01
+            :ARG1 (a3 / attack-01
+                  :ARG0 (c3 / country
+                        :name (n3 / name
+                              :op1 "Germany"))
+                  :ARG1 c2)))
+
+# ::id real_12.345
+# ::snt Russia send to Italy that Germany has said exactly one thing this entire game. He didn't even respond to me.
+(t / tell-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "Russia")))
+
+# ::id real_12.346
+# ::snt England send to France that Can you at least hit Brest?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / attack-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))
+            :ARG1 (p2 / province
+                  :name (n3 / name
+                        :op1 "Brest")))
+      :ARG3 c2)
+
+# ::id real_12.347
+# ::snt Russia send to Italy that Do you want to cut Turkey out now?
+(a / amr-empty)
+
+# ::id real_12.348
+# ::snt Italy send to England that Welp, guess we're dead.
+(a / amr-empty)
+
+# ::id real_12.349
+# ::snt Russia send to Italy that Please pull out of Serbia. You can have Trieste back.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (m / move-01
+                  :polarity -
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Italy"))
+                        :location (p2 / province
+                              :name (n3 / name
+                                    :op1 "Serbia"))))
+            :op2 (h / have-03
+                  :ARG0 c2
+                  :ARG1 (p3 / province
+                        :name (n4 / name
+                              :op1 "Trieste"))))
+      :ARG3 c2)
+
+# ::id real_12.350
+# ::snt England send to Italy that Please send a fleet if you can.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (m / move-01
+            :ARG1 (f / fleet
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :ARG2 (p2 / province
+                  :name (n3 / name
+                        :op1 "Moscow")))
+      :ARG3 c2)
+
+# ::id real_12.351
+# ::snt Russia send to England that Should I try to take Norway now? Or wait?
+(p / possible-01
+      :ARG1 (o / or
+            :op1 (h / have-03
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Norway")))
+            :op2 (h2 / have-03
+                  :polarity -
+                  :ARG0 c
+                  :ARG1 p2)))
+
+# ::id real_12.352
+# ::snt England send to Italy that I'm trying something. We'll see how it goes.
+(a / amr-empty)
+
+# ::id real_12.353
+# ::snt Russia send to England that Are you going to support me in now?
+(s / support-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (m / move-01
+            :ARG1 (a / army
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia")))
+            :ARG2 (p / province
+                  :name (n3 / name
+                        :op1 "Moscow")))
+      :polarity (a2 / amr-unknown))
+
+# ::id real_12.354
+# ::snt Italy send to Germany that Any way we can work together?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Italy"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany")))))
+
+# ::id real_12.355
+# ::snt England send to Russia that I'll support you in again.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (a / army
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Russia")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Moscow"))))
+      :ARG3 c2)
+
+# ::id real_12.356
+# ::snt Russia send to Germany that Are you ever going to respond?
+(a / amr-empty)
+
+# ::id real_12.357
+# ::snt England send to Russia that I'm going to try to take Belgium
+(m / move-01
+      :ARG1 (u / unit
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG2 (p / province
+            :name (n2 / name
+                  :op1 "Belgium")))
+
+# ::id real_12.358
+# ::snt Italy send to England that I'll try.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.359
+# ::snt Russia send to England that Okay, good. You should also try to take Belgium with the North Sea, supported by EC.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "England"))
+            :ARG1 (h / have-03
+                  :ARG0 c2
+                  :ARG1 (p2 / province
+                        :name (n3 / name
+                              :op1 "Belgium"))
+                  :instrument (f / fleet
+                        :mod c2
+                        :location (s2 / sea
+                              :name (n4 / name
+                                    :op1 "North"
+                                    :op2 "Sea"))))
+            :ARG3 c2))
+
+# ::id real_12.360
+# ::snt England send to France that Please cut Brest.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (p2 / prevent-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))
+            :ARG1 (s / support-01)
+            :instrument (u / unit
+                  :mod c2
+                  :location (p3 / province
+                        :name (n3 / name
+                              :op1 "Brest"))))
+      :ARG3 c2)
+
+# ::id real_12.361
+# ::snt Italy send to Russia that Will you actually pull out?
+(a / amr-empty)
+
+# ::id real_12.362
+# ::snt Russia send to Germany that Why do you never respond?
+(a / amr-empty)
+
+# ::id real_12.363
+# ::snt England send to Russia that Done.
+(a / amr-empty)
+
+# ::id real_12.364
+# ::snt Italy send to Turkey that Turkey, are you still there?
+(a / amr-empty)
+
+# ::id real_12.365
+# ::snt England send to Italy that Thanks.
+(a / amr-empty)
+
+# ::id real_12.366
+# ::snt Italy send to France that Nice work! Maybe you can take Brest this turn.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (h / have-03
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))
+            :ARG1 (p2 / province
+                  :name (n3 / name
+                        :op1 "Brest"))
+            :time (d / date-entity
+                  :year 1906
+                  :season (f / fall)))
+      :ARG3 c2)
+
+# ::id real_12.367
+# ::snt Russia send to Italy that Yes. You have my word.
+(a / amr-empty)
+
+# ::id real_12.368
+# ::snt England send to France that Why are you attacking me?
+(a / attack-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "France"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "England"))
+      :purpose (a2 / amr-unknown))
+
+# ::id real_12.369
+# ::snt Italy send to France that France, do you talk at all?
+(a / amr-empty)
+
+# ::id real_12.370
+# ::snt Italy send to England that Why did France move to Irish Sea?
+(m / move-01
+      :ARG1 (f / fleet
+            :mod (c / country
+                  :name (n / name
+                        :op1 "France")))
+      :ARG2 (s / sea
+            :name (n2 / name
+                  :op1 "Irish"
+                  :op2 "Sea"))
+      :purpose (a / amr-unknown))
+
+# ::id real_12.371
+# ::snt Russia send to Italy that Can we eliminate Turkey now?
+(a / amr-empty)
+
+# ::id real_12.372
+# ::snt England send to Italy that I really have no idea.
+(a / amr-empty)
+
+# ::id real_12.373
+# ::snt Italy send to Russia that Will you give me Serbia now?
+(a / amr-empty)
+
+# ::id real_12.374
+# ::snt Russia send to England that You might be able to hold out here. Especially with my new army.
+(a / amr-empty)
+
+# ::id real_12.375
+# ::snt England send to Italy that Just a very bizarre game.
+(a / amr-empty)
+
+# ::id real_12.376
+# ::snt Italy send to Russia that I'll stop supporting Turkey if you give me Serbia.
+(s / support-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Turkey"))
+      :condition (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n3 / name
+                        :op1 "Serbia"))))
+
+# ::id real_12.377
+# ::snt England send to Russia that We'll see. This game has been bizarre.
+(a / amr-empty)
+
+# ::id real_12.378
+# ::snt Russia send to England that You just have to make sure Germany doesn't take anything else of yours. And I think you can manage that.
+(a / amr-empty)
+
+# ::id real_12.379
+# ::snt Italy send to England that Indeed.
+(a / amr-empty)
+
+# ::id real_12.380
+# ::snt England send to Russia that Could you attack Barents Sea for me?
+(p / possible-01
+      :ARG1 (a / attack-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (s / sea
+                  :name (n2 / name
+                        :op1 "Barents"
+                        :op2 "Sea")))
+      :polarity (a2 / amr-unknown))
+
+# ::id real_12.381
+# ::snt Italy send to England that These Russian and German players really seem to know what they're doing, unfortunately.
+(a / amr-empty)
+
+# ::id real_12.382
+# ::snt Russia send to Italy that No.
+(a / amr-empty)
+
+# ::id real_12.383
+# ::snt England send to Italy that You should have sent a fleet west.
+(m / move-01
+      :polarity -
+      :ARG1 (f / fleet
+            :mod (c / country
+                  :name (n / name
+                        :op1 "Italy")))
+      :direction (w / west))
+
+# ::id real_12.384
+# ::snt Italy send to France that France?
+(a / amr-empty)
+
+# ::id real_12.385
+# ::snt England send to Russia that I'm not going to protect London.
+(d / defend-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "London")))
+
+# ::id real_12.386
+# ::snt Russia send to Italy that I'm not just going to give you Serbia.
+(a / attack-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Italy")))
+
+# ::id real_12.387
+# ::snt Italy send to Russia that Well, I tried to offer you something beneficial.
+(a / amr-empty)
+
+# ::id real_12.388
+# ::snt Russia send to Italy that If you want to eliminate Turkey, you're going to have to work with me.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy")))
+      :ARG3 (c3 / country
+            :name (n3 / name
+                  :op1 "Turkey")))
+
+# ::id real_12.389
+# ::snt England send to Russia that Dang, I really screwed that up.
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 c)
+
+# ::id real_12.390
+# ::snt England send to Russia that I'll try to take North Sea.
+(m / move-01
+      :ARG1 (f / fleet
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG2 (s / sea
+            :name (n2 / name
+                  :op1 "North"
+                  :op2 "Sea")))
+
+# ::id real_12.391
+# ::snt Italy send to England that Seems like Germany is moving against Russia.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / attack-01
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Russia"))))
+
+# ::id real_12.392
+# ::snt Russia send to Italy that I am 100% serious. I have wanted to eliminate Turkey since 1901.
+(a / amr-empty)
+
+# ::id real_12.393
+# ::snt England send to Germany that Would you like to make peace now?
+(a / amr-empty)
+
+# ::id real_12.394
+# ::snt Italy send to Germany that Do you want to coordinate?
+(a / amr-empty)
+
+# ::id real_12.395
+# ::snt Russia send to Germany that How about this: You can keep Scandinavia. Just don't take St. Pete or Warsaw. I'll work with you against Italy, who is moving to attack you.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (h / have-03
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Germany"))
+                  :ARG1 (w / world-region
+                        :name (n3 / name
+                              :op1 "Scandinavia")))
+            :op2 h
+            :polarity -
+            :ARG0 c2
+            :ARG1 (o / or
+                  :op1 (p2 / province
+                        :name (n4 / name
+                              :op1 "St."
+                              :op2 "Petersburg"))
+                  :op2 (p3 / province
+                        :name (n5 / name
+                              :op1 "Warsaw"))))
+      :op3 (a2 / ally-01
+            :ARG1 (a3 / and
+                  :op1 c
+                  :op2 c2)
+            :ARG3 (c3 / country
+                  :name (n6 / name
+                        :op1 "Italy")))
+      :ARG3 c2)
+
+# ::id real_12.396
+# ::snt Italy send to Russia that I'll work with you as soon as you actually do something beneficial for me.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia"))))
+
+# ::id real_12.397
+# ::snt Russia send to England that Yeah, probably your best bet.
+(a / amr-empty)
+
+# ::id real_12.398
+# ::snt England send to Italy that I guess so. Maybe I can convince him to make peace with me.
+(p / possible-01
+      :ARG1 (p2 / propose-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p3 / peace
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG3 c2))
+
+# ::id real_12.399
+# ::snt Italy send to Germany that Germany?
+(a / amr-empty)
+
+# ::id real_12.400
+# ::snt England send to Russia that You should probably cut Norway.
+(p / possible-01
+      :ARG1 (p2 / prevent-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (s / support-01)
+            :instrument (u / unit
+                  :mod c
+                  :location (p3 / province
+                        :name (n2 / name
+                              :op1 "Norway")))))
+
+# ::id real_12.401
+# ::snt Russia send to Italy that Like what?
+(a / amr-empty)
+
+# ::id real_12.402
+# ::snt Italy send to France that France, England wants your help.
+(a / amr-empty)
+
+# ::id real_12.403
+# ::snt England send to France that Glad to see you're on board now.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "France"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.404
+# ::snt Italy send to Russia that Like, actually make a deal that's beneficial to me. Like, instead of asking me to go after Turkey, you'd give me Serbia.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / and
+            :op1 (a2 / attack-01
+                  :polarity -
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))
+                  :ARG1 (c3 / country
+                        :name (n3 / name
+                              :op1 "Turkey")))
+            :op2 (h / have-03
+                  :ARG0 c
+                  :ARG1 (p2 / province
+                        :name (n4 / name
+                              :op1 "Serbia"))))
+      :ARG3 c2)
+
+# ::id real_12.405
+# ::snt England send to France that Let's keep working together.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "France"))))
+
+# ::id real_12.406
+# ::snt Russia send to Italy that I'm not going to just give you Serbia.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Serbia"))))
+
+# ::id real_12.407
+# ::snt Italy send to Russia that I guess you don't want my help then.
+(a / amr-empty)
+
+# ::id real_12.408
+# ::snt Russia send to England that Move North Sea to London and Norwegian to North Sea.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (m / move-01
+                  :ARG1 (f / fleet
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "England"))
+                        :location (s / sea
+                              :name (n3 / name
+                                    :op1 "North"
+                                    :op2 "Sea")))
+                  :ARG2 (p2 / province
+                        :name (n4 / name
+                              :op1 "London")))
+            :op2 (m2 / move-01
+                  :ARG1 (f2 / fleet
+                        :mod c2
+                        :location (s2 / sea
+                              :name (n5 / name
+                                    :op1 "Norwegian"
+                                    :op2 "Sea")))
+                  :ARG2 s))
+      :ARG3 c2)
+
+# ::id real_12.409
+# ::snt Italy send to Russia that Well, have fun dying to Germany.
+(a / amr-empty)
+
+# ::id real_12.410
+# ::snt England send to Germany that Are you just going to ignore me now?
+(a / amr-empty)
+
+# ::id real_12.411
+# ::snt Russia send to Italy that You didn't offer to help, you offered to "stop supporting Turkey". I asked for more details about how you would actually do that.
+(a / and
+      :op1 (p / propose-01
+            :polarity -
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (s / support-01
+                  :polarity -
+                  :ARG0 c
+                  :ARG1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey")))
+            :ARG3 c2)
+      :op2 (s2 / support-01
+            :polarity -
+            :ARG0 c2
+            :ARG1 (c3 / country
+                  :name (n3 / name
+                        :op1 "Turkey"))))
+
+# ::id real_12.412
+# ::snt Italy send to England that Wow, nice move into North Sea.
+(m / move-01
+      :ARG1 (f / fleet
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG2 (s / sea
+            :name (n2 / name
+                  :op1 "North"
+                  :op2 "Sea")))
+
+# ::id real_12.413
+# ::snt England send to Russia that I'm trying something a little more ambitious.
+(a / amr-empty)
+
+# ::id real_12.414
+# ::snt Russia send to Italy that I will die to Germany. So what?
+(a / amr-empty)
+
+# ::id real_12.415
+# ::snt Italy send to Russia that Seems like you didn't want any details either.
+(a / amr-empty)
+
+# ::id real_12.416
+# ::snt England send to Russia that I may be able to get Belgium and Holland if it works.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (a / and
+                  :op1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Belgium"))
+                  :op2 (p3 / province
+                        :name (n3 / name
+                              :op1 "Holland")))))
+
+# ::id real_12.417
+# ::snt Russia send to England that And what might that be?
+(a / amr-empty)
+
+# ::id real_12.418
+# ::snt England send to Italy that We'll see how long I can hold it.
+(p / possible-01
+      :ARG1 (h / hold-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Warsaw"))))
+
+# ::id real_12.419
+# ::snt Italy send to Germany that Germany, talk to me please. We can coordinate.
+(a / amr-empty)
+
+# ::id real_12.420
+# ::snt England send to Russia that I'm going to try to convoy the army from Edinburgh to either Belgium or Holland.
+(t / transport-01
+      :ARG0 (f / fleet
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG1 (a / army)
+      :ARG3 (o / or
+            :op1 (p / province
+                  :name (n2 / name
+                        :op1 "Belgium"))
+            :op2 (p2 / province
+                  :name (n3 / name
+                        :op1 "Holland"))))
+
+# ::id real_12.421
+# ::snt Italy send to England that Well, France's finally doing something.
+(a / amr-empty)
+
+# ::id real_12.422
+# ::snt Russia send to England that Germany will take London if you do that.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (h / have-03
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))
+            :ARG1 (p / province
+                  :name (n3 / name
+                        :op1 "London"))
+            :condition (m / move-01
+                  :ARG1 (u / unit
+                        :mod c2)
+                  :ARG2 p)))
+
+# ::id real_12.423
+# ::snt Russia send to England that Oh, that works. Nice!
+(a / amr-empty)
+
+# ::id real_12.424
+# ::snt England send to France that Are you going to talk to me?
+(a / amr-empty)
+
+# ::id real_12.425
+# ::snt Italy send to England that Nice move into Belgium!
+(m / move-01
+      :ARG1 (u / unit)
+      :ARG2 (p / province
+            :name (n / name
+                  :op1 "Belgium")))
+
+# ::id real_12.426
+# ::snt Russia send to England that You can take Holland now!
+(h / have-03
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Holland")))
+
+# ::id real_12.427
+# ::snt England send to Russia that I'm in a guessing game now though.
+(a / amr-empty)
+
+# ::id real_12.428
+# ::snt Italy send to Russia that So, if I actually stop supporting Turkey, would you be willing to work together?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 c
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))
+                  :op3 (c3 / country
+                        :name (n3 / name
+                              :op1 "Turkey")))
+            :ARG3 c2)
+      :ARG3 c2)
+
+# ::id real_12.429
+# ::snt Italy send to Russia that Or should we just continue doing this dance?
+(a / amr-empty)
+
+# ::id real_12.430
+# ::snt England send to Italy that Thanks. This is just a weird game all around.
+(a / amr-empty)
+
+# ::id real_12.431
+# ::snt Russia send to England that I guess move Clyde back to Edinburgh.
+(p / possible-01
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :location (p2 / province
+                        :name (n / name
+                              :op1 "Clyde")))
+            :ARG2 (p3 / province
+                  :name (n2 / name
+                        :op1 "Edinburgh"))))
+
+# ::id real_12.432
+# ::snt Italy send to England that I should be able to take Munich this turn, and that would really help you out.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Munich"))
+            :time (d / date-entity
+                  :year 1901
+                  :season (f / fall))))
+
+# ::id real_12.433
+# ::snt Russia send to England that And maybe the North Sea to Holland, supported by Belgium.
+(p / possible-01
+      :ARG1 (s / support-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (m / move-01
+                  :ARG1 (f / fleet
+                        :location (s2 / sea
+                              :name (n2 / name
+                                    :op1 "North"
+                                    :op2 "Sea")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Holland")))))
+
+# ::id real_12.434
+# ::snt England send to Russia that That's my plan.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "Denmark"))))
+
+# ::id real_12.435
+# ::snt Italy send to Germany that Germany, can you talk?
+(a / amr-empty)
+
+# ::id real_12.436
+# ::snt England send to Russia that I'm trying for both.
+(a / amr-empty)
+
+# ::id real_12.437
+# ::snt Italy send to Germany that Why won't you talk to me?
+(a / amr-empty)
+
+# ::id real_12.438
+# ::snt Russia send to Italy that I could support you to Constantinople right now. But that's about it.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (s / support-01
+            :ARG0 c
+            :ARG1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Italy")))
+                  :ARG2 (p2 / province
+                        :name (n3 / name
+                              :op1 "Constantinople"))))
+      :ARG3 c2)
+
+# ::id real_12.439
+# ::snt England send to Italy that Go for it.
+(a / amr-empty)
+
+# ::id real_12.440
+# ::snt Russia send to England that I'm trying for both as well. But I probably won't succeed.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))))
+
+# ::id real_12.441
+# ::snt Italy send to England that Germany seems to be completely ignoring me. Wonder why?
+(a / amr-empty)
+
+# ::id real_12.442
+# ::snt England send to France that If you cut Burgundy, you can take back Paris.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "France"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Paris"))
+            :condition (p3 / prevent-01
+                  :ARG0 c
+                  :ARG1 (s / support-01
+                        :ARG0 c
+                        :ARG1 (p4 / province
+                              :name (n3 / name
+                                    :op1 "Burgundy"))))))
+
+# ::id real_12.443
+# ::snt Russia send to Italy that Just saying. There's no reason why you can't take Munich right now.
+(p / possible-01
+      :polarity -
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Munich"))
+            :time (d / date-entity
+                  :year 1907
+                  :season (f / fall))))
+
+# ::id real_12.444
+# ::snt Italy send to Russia that You wouldn't support me to Con, you'd just take Bulgaria.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a2 / and
+            :op1 (s / support-01
+                  :polarity -
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))
+                  :ARG1 (m / move-01
+                        :ARG1 (u / unit
+                              :mod c)
+                        :ARG2 (p / province
+                              :name (n3 / name
+                                    :op1 "Constantinople"))))
+            :op2 (h / have-03
+                  :ARG0 c2
+                  :ARG1 (p2 / province
+                        :name (n4 / name
+                              :op1 "Bulgaria"))))
+      :ARG2 c2)
+
+# ::id real_12.445
+# ::snt England send to France that You need to send MAO to the English Channel to prevent Germany from surrounding you.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (m / move-01
+            :ARG1 (f / fleet
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "France"))
+                  :location (s / sea
+                        :name (n3 / name
+                              :op1 "Mid-Atlantic"
+                              :op2 "Ocean")))
+            :ARG2 (s2 / sea
+                  :name (n4 / name
+                        :op1 "English"
+                        :op2 "Channel"))
+            :purpose (p2 / prevent-01
+                  :ARG0 c2
+                  :ARG1 (a / attack-01
+                        :ARG0 (c3 / country
+                              :name (n5 / name
+                                    :op1 "Germany"))
+                        :ARG1 c)))
+      :ARG3 c2)
+
+# ::id real_12.446
+# ::snt Italy send to Germany that Germany, please talk.
+(a / amr-empty)
+
+# ::id real_12.447
+# ::snt Russia send to Italy that Nice! You took Munich!
+(h / have-03
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (p / province
+            :name (n2 / name
+                  :op1 "Munich")))
+
+# ::id real_12.448
+# ::snt England send to France that Germany has too many fleets and not enough armies to protect his home centers.
+(a / amr-empty)
+
+# ::id real_12.449
+# ::snt Russia send to Italy that I would still like to work with you. I've been saying that all game.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy"))))
+
+# ::id real_12.450
+# ::snt Italy send to England that Germany really isn't that good, is he? He could've stopped me from taking Munich and still protected Berlin.
+(p / possible-01
+      :polarity -
+      :ARG1 (p2 / prevent-01
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Germany"))
+            :ARG1 (h / have-03
+                  :ARG0 c
+                  :ARG1 (p3 / province
+                        :name (n2 / name
+                              :op1 "Munich")))))
+
+# ::id real_12.451
+# ::snt England send to Russia that You should start taking back your home centers.
+(a / amr-empty)
+
+# ::id real_12.452
+# ::snt Russia send to France that You should move your fleet down to take Tunis. It's wide open.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "France"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Tunisia"))))
+
+# ::id real_12.453
+# ::snt England send to Russia that Germany has too many fleets and not enough armies to stop Italy.
+(a / amr-empty)
+
+# ::id real_12.454
+# ::snt Italy send to Russia that Well, what do you have in mind?
+(a / amr-empty)
+
+# ::id real_12.455
+# ::snt Russia send to England that I know. I am going to try to take St. Pete right now.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "St."
+                        :op2 "Petersburg")))
+      :ARG2 (c2 / country
+            :name (n3 / name
+                  :op1 "England")))
+
+# ::id real_12.456
+# ::snt Italy send to France that France, are you there?
+(a / amr-empty)
+
+# ::id real_12.457
+# ::snt Russia send to Italy that You would stop trying to take Serbia. Maybe you'd support me to Constantinople. Or you could take Constantinople and let me have Vienna back. Or something.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (o / or
+            :op1 (s / support-01
+                  :ARG0 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy"))
+                  :ARG1 (m / move-01
+                        :polarity -
+                        :ARG1 (u / unit
+                              :mod c)
+                        :ARG2 (p2 / province
+                              :name (n3 / name
+                                    :op1 "Constantinople"))))
+            :op2 (h / have-03
+                  :ARG0 c2
+                  :ARG1 (p3 / province
+                        :name (n4 / name
+                              :op1 "Constantinople"))))
+      :op3 (h2 / have-03
+            :ARG0 c2
+            :ARG1 (p4 / province
+                  :name (n5 / name
+                        :op1 "Vienna")))
+      :ARG3 c2)
+
+# ::id real_12.458
+# ::snt England send to Italy that It's pretty ridiculous.
+(a / amr-empty)
+
+# ::id real_12.459
+# ::snt England send to Italy that He won't even talk to me.
+(t / tell-01
+      :polarity -
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG2 (c2 / country
+            :name (n2 / name
+                  :op1 "England")))
+
+# ::id real_12.460
+# ::snt Russia send to Italy that Or you could just stop trying to take Serbia and focus on Germany.
+(p / possible-01
+      :ARG1 (o / or
+            :op1 (h / have-03
+                  :polarity -
+                  :ARG0 (c / country
+                        :name (n / name
+                              :op1 "Italy"))
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Serbia")))
+            :op2 (a / attack-01
+                  :ARG0 c
+                  :ARG1 (c2 / country
+                        :name (n3 / name
+                              :op1 "Germany")))))
+
+# ::id real_12.461
+# ::snt Italy send to Germany that Germany, why won't you talk?
+(a / amr-empty)
+
+# ::id real_12.462
+# ::snt England send to Russia that Good luck.
+(a / amr-empty)
+
+# ::id real_12.463
+# ::snt Russia send to England that Also, you should have disbanded and rebuilt in Edinburgh.
+(a / amr-empty)
+
+# ::id real_12.464
+# ::snt England send to Russia that You should send Sevastopol to Moscow and Black Sea to Sevastopol.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / and
+            :op1 (m / move-01
+                  :ARG1 (u / unit
+                        :mod (c2 / country
+                              :name (n2 / name
+                                    :op1 "Russia"))
+                        :location (p2 / province
+                              :name (n3 / name
+                                    :op1 "Sevastopol")))
+                  :ARG2 (p3 / province
+                        :name (n4 / name
+                              :op1 "Moscow")))
+            :op2 (m2 / move-01
+                  :ARG1 (f / fleet
+                        :location (s / sea
+                              :name (n5 / name
+                                    :op1 "Black"
+                                    :op2 "Sea"))
+                        :mod c2)
+                  :ARG2 p2))
+      :ARG3 c2)
+
+# ::id real_12.465
+# ::snt Italy send to England that It's really bizarre. He must be a mastermind.
+(a / amr-empty)
+
+# ::id real_12.466
+# ::snt Russia send to England that Nevermind, Germany has a fleet in Norway now. That means they can't stop me.
+(a / and
+      :op1 (m / move-01
+            :ARG1 (f / fleet
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Germany"))
+                  :location (p / province
+                        :name (n2 / name
+                              :op1 "Norway"))))
+      :op2 (p2 / possible-01
+            :polarity -
+            :ARG1 (p3 / prevent-01
+                  :ARG0 c
+                  :ARG1 (a2 / attack-01
+                        :ARG0 c
+                        :ARG1 (c2 / country
+                              :name (n3 / name
+                                    :op1 "Russia"))))))
+
+# ::id real_12.467
+# ::snt Russia send to England that Move Edinburgh to North Sea!
+(m / move-01
+      :ARG1 (u / unit
+            :mod (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :location (p / province
+                  :name (n2 / name
+                        :op1 "Edinburgh")))
+      :ARG2 (s / sea
+            :name (n3 / name
+                  :op1 "North"
+                  :op2 "Sea")))
+
+# ::id real_12.468
+# ::snt Russia send to France that Nice job! You should be able to take Tunis now.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "France"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Tunisia"))))
+
+# ::id real_12.469
+# ::snt Russia send to Italy that You're going to lose Tunis to France.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (l / lose-02
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy"))
+            :ARG1 (p / province
+                  :name (n3 / name
+                        :op1 "Tunisia"))))
+
+# ::id real_12.470
+# ::snt England send to Germany that Why are you committing suicide?
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Germany"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "England"))
+      :purpose (a / amr-unknown))
+
+# ::id real_12.471
+# ::snt Russia send to Italy that There's no reason for you to be in Galicia unless you are attacking me.
+(p / possible-01
+      :polarity -
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c / country
+                        :name (n / name
+                              :op1 "Italy")))
+            :ARG2 (p2 / province
+                  :name (n2 / name
+                        :op1 "Galicia"))
+            :condition (a / attack-01
+                  :ARG0 (c2 / country
+                        :name (n3 / name
+                              :op1 "Russia"))
+                  :ARG1 c)))
+
+# ::id real_12.472
+# ::snt Italy send to England that Oof, seems like France is turning on me as well.
+(b / betray-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "France"))
+      :ARG1 (c2 / country
+            :name (n2 / name
+                  :op1 "Italy")))
+
+# ::id real_12.473
+# ::snt Russia send to Turkey that Any interest in working together against Italy?
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Italy")))
+      :polarity (a3 / amr-unknown))
+
+# ::id real_12.474
+# ::snt Italy send to France that France, what the hell? Why?
+(a / amr-empty)
+
+# ::id real_12.475
+# ::snt Russia send to France that Maybe move Burgundy to Belgium, just to see if you can catch Germany off-guard.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :location (p2 / province
+                        :name (n2 / name
+                              :op1 "Burgundy"))
+                  :mod (c2 / country
+                        :name (n3 / name
+                              :op1 "France")))
+            :ARG2 (p3 / province
+                  :name (n4 / name
+                        :op1 "Belgium")))
+      :ARG3 c2)
+
+# ::id real_12.476
+# ::snt Italy send to Russia that Why should I work with someone who continues to attack me?
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Russia")))
+      :polarity (a3 / amr-unknown))
+
+# ::id real_12.477
+# ::snt England send to Italy that No idea what's going on.
+(a / amr-empty)
+
+# ::id real_12.478
+# ::snt Russia send to England that And you can probably take Kiel.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Kiel"))))
+
+# ::id real_12.479
+# ::snt Italy send to Russia that I really don't understand why you were so stubborn about Vienna.
+(a / amr-empty)
+
+# ::id real_12.480
+# ::snt England send to Italy that I've been begging France to help me all game.
+(a / amr-empty)
+
+# ::id real_12.481
+# ::snt Russia send to Italy that Because I would still like to work with you.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy"))))
+
+# ::id real_12.482
+# ::snt Italy send to England that This game is really weird.
+(a / amr-empty)
+
+# ::id real_12.483
+# ::snt England send to Russia that I may be able to get Denmark as well.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Denmark"))))
+
+# ::id real_12.484
+# ::snt Italy send to Russia that Why?
+(a / amr-empty)
+
+# ::id real_12.485
+# ::snt England send to Italy that The scoring system encourages irrational behavior.
+(a / amr-empty)
+
+# ::id real_12.486
+# ::snt Italy send to Russia that Are you going to take back Stp?
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "St."
+                        :op2 "Petersburg")))
+      :polarity (a / amr-unknown))
+
+# ::id real_12.487
+# ::snt Italy send to England that Indeed.
+(a / amr-empty)
+
+# ::id real_12.488
+# ::snt Russia send to Italy that So you're not interested in working together?
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (a2 / ally-01
+            :polarity -
+            :ARG1 (a3 / and
+                  :op1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Russia"))
+                  :op2 c))
+      :ARG2 c2
+      :polarity (a4 / amr-unknown))
+
+# ::id real_12.489
+# ::snt Italy send to England that Would you mind tapping Kiel for me?
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Italy"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :mod (c2 / country
+                        :name (n2 / name
+                              :op1 "England")))
+            :ARG2 (p2 / province
+                  :name (n3 / name
+                        :op1 "Kiel")))
+      :ARG3 c2)
+
+# ::id real_12.490
+# ::snt England send to Russia that You should be able to take Norway this turn.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Norway"))
+            :time (d / date-entity
+                  :year 1901
+                  :season (f / fall))))
+
+# ::id real_12.491
+# ::snt Russia send to Italy that We could still work together against Germany.
+(p / possible-01
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c / country
+                        :name (n / name
+                              :op1 "Russia"))
+                  :op2 (c2 / country
+                        :name (n2 / name
+                              :op1 "Italy")))
+            :ARG3 (c3 / country
+                  :name (n3 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.492
+# ::snt England send to Italy that I'm going to try to take Sweden.
+(m / move-01
+      :ARG1 (u / unit
+            :mod (c / country
+                  :name (n / name
+                        :op1 "England")))
+      :ARG2 (p / province
+            :name (n2 / name
+                  :op1 "Sweden")))
+
+# ::id real_12.493
+# ::snt Russia send to England that And you can take Sweden.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Sweden"))))
+
+# ::id real_12.494
+# ::snt Italy send to England that Your fleet in Den could do that.
+(p / possible-01
+      :ARG1 (h / hold-17
+            :ARG1 (f / fleet
+                  :location (p2 / province
+                        :name (n / name
+                              :op1 "Denmark"))
+                  :mod (c / country
+                        :name (n2 / name
+                              :op1 "Italy")))))
+
+# ::id real_12.495
+# ::snt Russia send to England that Maybe move Yorkshire to London.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :location (p2 / province
+                        :name (n2 / name
+                              :op1 "Yorkshire")))
+            :ARG2 (p3 / province
+                  :name (n3 / name
+                        :op1 "London")))
+      :ARG3 (c2 / country
+            :name (n4 / name
+                  :op1 "England")))
+
+# ::id real_12.496
+# ::snt Russia send to France that Be careful! Germany might be trying to take Spain or Portugal.
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Germany"))
+            :ARG1 (o / or
+                  :op1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Spain"))
+                  :op2 (p3 / province
+                        :name (n3 / name
+                              :op1 "Portugal")))))
+
+# ::id real_12.497
+# ::snt Italy send to Russia that I'd like Vienna back.
+(a / amr-empty)
+
+# ::id real_12.498
+# ::snt Russia send to France that And you should probably move Tunis to the Tyrrhenian Sea.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (m / move-01
+            :ARG1 (u / unit
+                  :location (p2 / province
+                        :name (n2 / name
+                              :op1 "Tunisia")))
+            :ARG2 (s / sea
+                  :name (n3 / name
+                        :op1 "Tyrolia")))
+      :ARG3 (c2 / country
+            :name (n4 / name
+                  :op1 "France")))
+
+# ::id real_12.499
+# ::snt Italy send to Russia that How would you propose that?
+(a / amr-empty)
+
+# ::id real_12.500
+# ::snt England send to Russia that I'll go for Sweden.
+(a / agree-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (h / have-03
+            :ARG0 c
+            :ARG1 (p / province
+                  :name (n2 / name
+                        :op1 "Sweden")))
+      :ARG2 (c2 / country
+            :name (n3 / name
+                  :op1 "Russia")))
+
+# ::id real_12.501
+# ::snt England send to Russia that It probably won't work though.
+(e / expect-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (h / have-03
+            :polarity -
+            :ARG0 (c2 / country
+                  :name (n2 / name
+                        :op1 "Italy"))
+            :ARG1 (p / province
+                  :name (n3 / name
+                        :op1 "Tyrolia"))))
+
+# ::id real_12.502
+# ::snt Russia send to Italy that You could move out of Warsaw and Serbia.
+(p / possible-01
+      :ARG1 (m / move-01
+            :ARG1 (a / and
+                  :op1 (u / unit
+                        :mod (c / country
+                              :name (n / name
+                                    :op1 "Italy"))
+                        :location (p2 / province
+                              :name (n2 / name
+                                    :op1 "Warsaw")))
+                  :op2 (u2 / unit
+                        :mod c
+                        :location (p3 / province
+                              :name (n3 / name
+                                    :op1 "Serbia"))))))
+
+# ::id real_12.503
+# ::snt Italy send to Germany that Germany, I want to work with you.
+(a / ally-01
+      :ARG1 (a2 / and
+            :op1 (c / country
+                  :name (n / name
+                        :op1 "Italy"))
+            :op2 (c2 / country
+                  :name (n2 / name
+                        :op1 "Germany"))))
+
+# ::id real_12.504
+# ::snt England send to Italy that I could lose Denmark though.
+(p / possible-01
+      :ARG1 (l / lose-02
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "England"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Denmark"))))
+
+# ::id real_12.505
+# ::snt England send to Turkey that You and Russia should work together against Italy.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "England"))
+      :ARG1 (a / ally-01
+            :ARG1 (a2 / and
+                  :op1 (c2 / country
+                        :name (n2 / name
+                              :op1 "Turkey"))
+                  :op2 (c3 / country
+                        :name (n3 / name
+                              :op1 "Russia")))
+            :ARG3 (c4 / country
+                  :name (n4 / name
+                        :op1 "Italy")))
+      :ARG3 c2)
+
+# ::id real_12.506
+# ::snt Russia send to Italy that And then I would take Warsaw back and you would take Vienna.
+(p / propose-01
+      :ARG0 (c / country
+            :name (n / name
+                  :op1 "Russia"))
+      :ARG1 (a / and
+            :op1 (h / have-03
+                  :ARG0 c
+                  :ARG1 (p2 / province
+                        :name (n2 / name
+                              :op1 "Warsaw")))
+            :op2 (h2 / have-03
+                  :ARG0 (c2 / country
+                        :name (n3 / name
+                              :op1 "Italy"))
+                  :ARG1 (p3 / province
+                        :name (n4 / name
+                              :op1 "Vienna"))))
+      :ARG3 c2)
+
+# ::id real_12.507
+# ::snt Italy send to Russia that And you'd just take Warsaw?
+(p / possible-01
+      :ARG1 (h / have-03
+            :ARG0 (c / country
+                  :name (n / name
+                        :op1 "Russia"))
+            :ARG1 (p2 / province
+                  :name (n2 / name
+                        :op1 "Warsaw"))))
+
