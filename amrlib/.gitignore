@@ -2,7 +2,6 @@ docs/build/
 build/
 dist/
 runs/
-amrlib/data
 *.egg-info/
 .private/
 __pycache__
