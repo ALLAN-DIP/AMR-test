@@ -123,8 +123,32 @@ def clean_text(text):
     cleaned_text = re.sub(r'([,\.])(?=[^\s])', r'\1 ', cleaned_text)
     return cleaned_text
 
+def extract_and_replace(line):
+    # Extracts speaker and listener from the given line
+    match = re.search(r'^(# ::snt )(\w+) send to (\w+) that (.+)$', line)
+    if match:
+        new_text = replace_pronouns_spacy(match.group(4), match.group(2), match.group(3))
+        # Construct the new line with the extracted speaker and listener
+        new_line = f"{match.group(1)}{match.group(2)} send to {match.group(3)} that {new_text}\n"
+        return new_line, match.group(2), match.group(3)
+    return line, None, None
+
+
 # Example sentence
 sentence = "Yeah, I can’t say I’ve tried it and it works, cause I’ve never tried it or seen it. But how I think it would work is (a) my Spring move looks like an attack on Austria, so it would not be surprising if you did not cover Munich. Then (b) you build two armies, which looks like we’re really at war and you’re going to eject me. Then we launch the attack in Spring. So there is really no part of this that would raise alarm bells with France.  All that said, I’ve literally never done it before, and it does involve risk for you, so I’m not offended or concerned if it’s just not for you. I’m happy to play more conventionally too. Up to you."
 # Replace pronouns
 transformed_sentence = replace_pronouns_spacy(sentence, 'Italy', 'Austria')
 transformed_sentence
+
+# Path to the original file
+input_path = './test.txt'
+output_path = './modified_test.txt'
+
+# Reading the original file and writing the modified content to a new file
+with open(input_path, 'r', encoding='utf-8') as infile, open(output_path, 'w', encoding='utf-8') as outfile:
+    speakers_listeners = []
+    for line in infile:
+        modified_line, speaker, listener = extract_and_replace(line)
+        outfile.write(modified_line)
+        if speaker and listener:
+            speakers_listeners.append((speaker, listener))
